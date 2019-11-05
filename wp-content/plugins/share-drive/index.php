@@ -23,35 +23,75 @@ function register_api_hooks() {
   register_rest_route(
     'drive', '/logout/',
     array(
-      'methods'  => 'GET',
+      'methods'  => 'POST',
       'callback' => 'loggout',
     )
   );
 
-
-
-    register_rest_route(
+register_rest_route(
     'drive', '/changePassword/',
-    array(
-      'methods'  => 'POST',
-      'callback' => 'changePassword',
+	    array(
+    	  'methods'  => 'POST',
+      	  'callback' => 'changePassword',
     )
   );
 
-     register_rest_route(
+register_rest_route(
     'drive', '/verifyToken/',
-    array(
-      'methods'  => 'GET',
-      'callback' => 'verifyToken',
-    )
+	    array(
+    	  'methods'  => 'POST',
+      	  'callback' => 'verifyToken',
+    	)
   );
-
-
-
-
 
 }
-/* Closed  */
+
+
+
+ /**
+     * 
+     * @param type $requestedToken
+     *  Logout User by token
+*/
+function loggout($request){
+          $responsecreds = array();
+          header('Access-Control-Allow-Origin: *');
+         
+    	## Verify Token
+      if(!empty($request["token"]) && isset($request["token"]) ){
+         	$users = get_users(array(
+					    'meta_key'     => '__auth_token_for_shared_drive__',
+					    'meta_value'   => $request["token"],
+					    'meta_compare' => '=',
+			));
+
+         	if(!empty($users)){
+
+         		$user_id=$users[0]->ID;
+         			if (delete_user_meta($user_id, '__auth_token_for_shared_drive__') ) {
+         				$responsecreds['status']="success";
+         				$responsecreds['data']=$responseUser;
+         				return $responsecreds;
+         			}
+         	
+         	}else{
+	         		$responsecreds['status']="error";
+	         		$responsecreds['data']=[];
+	         		$responsecreds['message']="Invalid Token Please try again";
+	         		return $responsecreds;	         		
+	         	}  
+
+
+	    }else{
+	         		$responsecreds['status']="error";
+	         		$responsecreds['data']=[];
+	         		$responsecreds['message']="Invalid Token Please try again";
+	         		return $responsecreds;	         		
+	      	}         		
+ }
+         
+
+
 
  /**
      * 
