@@ -19,6 +19,17 @@ function register_api_hooks() {
     )
   );
 
+
+  register_rest_route(
+    'drive', '/logout/',
+    array(
+      'methods'  => 'GET',
+      'callback' => 'loggout',
+    )
+  );
+
+
+
     register_rest_route(
     'drive', '/changePassword/',
     array(
@@ -56,7 +67,10 @@ function login($request){
           $user = wp_signon( $creds, false );
     ## Invalid User 
     if ( is_wp_error($user) ){
-    	return $user;
+    	$responsecreds['status']="error";
+         		$responsecreds['data']=[];
+         		$responsecreds['message']="Invalid Token Please try again";
+         		return $responsecreds;
    	}else{
         ## Set Token If user is valid
      		$token = $creds['user_login'].time();
@@ -65,8 +79,12 @@ function login($request){
      		$users=array();
      		$users['status']="success";
      		update_user_meta( $user_id, '__auth_token_for_shared_drive__', $token);
-     		$users['token']=$token;
-     		return  $users;
+     		$responseUser=get_user_meta($users[0]->ID);
+     		$responsecreds['status']="success";
+         	$responsecreds['data']=$responseUser;
+         	$responsecreds['token']=$token;
+         	return $responsecreds;
+
  	 
  	}
  	 
@@ -82,8 +100,6 @@ function verifyToken($request){
           $responsecreds = array();
           header('Access-Control-Allow-Origin: *');
          
-          //echo "<pre>";print_r($request);die;
-          
     	## Verify Token
          if(!empty($request["token"]) && isset($request["token"]) ){
          	$users = get_users(array(
@@ -93,7 +109,6 @@ function verifyToken($request){
 		));
 
          	if(!empty($users)){
-         		
          		$responseUser=get_user_meta($users[0]->ID);
          		$responsecreds['status']="success";
          		$responsecreds['data']=$responseUser;
