@@ -8,10 +8,7 @@
  * Author URI:  http://mutewebtechnologies.com/
  */
 
-
-
  /*** Setting Routs for the webservice */
-
 add_action( 'rest_api_init', 'register_api_hooks' );
 function register_api_hooks() {
   register_rest_route(
@@ -22,17 +19,27 @@ function register_api_hooks() {
     )
   );
 
-  //   register_rest_route(
-  //   'drive', '/changePassword/',
-  //   array(
-  //     'methods'  => 'POST',
-  //     'callback' => 'changePassword',
-  //   )
-  // );
+    register_rest_route(
+    'drive', '/changePassword/',
+    array(
+      'methods'  => 'POST',
+      'callback' => 'changePassword',
+    )
+  );
+
+     register_rest_route(
+    'drive', '/verifyToken/',
+    array(
+      'methods'  => 'GET',
+      'callback' => 'verifyToken',
+    )
+  );
+
+
+
 
 
 }
-
 /* Closed  */
 
  /**
@@ -43,9 +50,7 @@ function register_api_hooks() {
 function login($request){
           $creds = array();
           header('Access-Control-Allow-Origin: *');
-         header('Access-Control-Allow-Methods: GET, POST, PATCH, PUT, DELETE, OPTIONS');
-         header('Access-Control-Allow-Headers: Origin, Content-Type, Accept, Authorization, X-Requested-With, Application,Access-Control-Allow-Origin,X-Auth-Token');
-          $creds['user_login'] = $request["username"];
+         $creds['user_login'] = $request["username"];
           $creds['user_password'] =  $request["password"];
           $creds['remember'] = true;
           $user = wp_signon( $creds, false );
@@ -57,13 +62,58 @@ function login($request){
      		$token = $creds['user_login'].time();
      		$user_endoredata = json_decode(json_encode($user));
      		$user_id = $user_endoredata->data->ID;
+     		$users=array();
+     		$users['status']="success";
      		update_user_meta( $user_id, '__auth_token_for_shared_drive__', $token);
-     		return  $user;
+     		$users['token']=$token;
+     		return  $users;
  	 
  	}
  	 
 }
 
+
+ /**
+     * 
+     * @param type $request
+     *  Checking Login verifyToken 
+*/
+function verifyToken($request){
+          $responsecreds = array();
+          header('Access-Control-Allow-Origin: *');
+         
+          //echo "<pre>";print_r($request);die;
+          
+    	## Verify Token
+         if(!empty($request["token"]) && isset($request["token"]) ){
+         	$users = get_users(array(
+					    'meta_key'     => '__auth_token_for_shared_drive__',
+					    'meta_value'   => $request["token"],
+					    'meta_compare' => '=',
+		));
+
+         	if(!empty($users)){
+         		
+         		$responseUser=get_user_meta($users[0]->ID);
+         		$responsecreds['status']="success";
+         		$responsecreds['data']=$responseUser;
+         		return $responsecreds;
+
+         		
+         	}else{
+         		$responsecreds['status']="error";
+         		$responsecreds['data']=[];
+         		$responsecreds['message']="Invalid Token Please try again";
+         		return $responsecreds;
+         		
+         	}
+         	
+	
+         }
+         
+  
+ 	 
+}
 
 
  /**
@@ -79,4 +129,3 @@ function changePassword($request){
           $creds['auth_token'] =  $request["auth_token"];
    
 }
-add_action( 'after_setup_theme', 'custom_login' );
