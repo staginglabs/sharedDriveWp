@@ -8,7 +8,7 @@ $show_navigation = get_post_meta( get_the_ID(), '_et_pb_project_nav', true );
 
 ?>
 
-<div id="main-content">
+<div id="main-content" class="main-content-woo" >
 
 <?php if ( ! $is_page_builder_used ) : ?>
 
@@ -93,7 +93,7 @@ $show_navigation = get_post_meta( get_the_ID(), '_et_pb_project_nav', true );
 				}
 			?>
 
-			<?php get_sidebar(); ?>
+			<?php //get_sidebar(); ?>
 		</div> <!-- #content-area -->
 	</div> <!-- .container -->
 
@@ -103,4 +103,4 @@ $show_navigation = get_post_meta( get_the_ID(), '_et_pb_project_nav', true );
 
 <?php
 
-get_footer();
+//get_footer();

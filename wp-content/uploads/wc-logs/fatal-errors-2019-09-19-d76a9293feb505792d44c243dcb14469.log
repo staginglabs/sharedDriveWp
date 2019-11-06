@@ -1,0 +1,30 @@
+2019-09-19T06:56:52+00:00 CRITICAL Uncaught Error: Call to undefined function et_fb_enabled() in /var/www/wp-content/themes/Divi/includes/builder/feature/woocommerce-modules.php:779
+Stack trace:
+#0 /var/www/wp-includes/class-wp-hook.php(286): et_builder_wc_load_scripts('')
+#1 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/wp-includes/script-loader.php(2539): do_action('wp_enqueue_scri...')
+#4 /var/www/wp-includes/class-wp-hook.php(286): wp_enqueue_scripts('')
+#5 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#7 /var/www/wp-includes/general-template.php(2745): do_action('wp_head')
+#8 /var/www/wp-content/themes/Divi/header.php(27): wp_head()
+#9 /var/www/wp-includes/template.php(722): require_once('/var/www/wp-con...')
+#10 /var/www/wp-includes/template.php(671): load_template('/var/www/wp-con...', true)
+#11 /var/www/wp-includes/general- in /var/www/wp-content/themes/Divi/includes/builder/feature/woocommerce-modules.php on line 779
+
+2019-09-19T06:56:54+00:00 CRITICAL Uncaught Error: Call to undefined function et_fb_enabled() in /var/www/wp-content/themes/Divi/includes/builder/feature/woocommerce-modules.php:779
+Stack trace:
+#0 /var/www/wp-includes/class-wp-hook.php(286): et_builder_wc_load_scripts('')
+#1 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/wp-includes/script-loader.php(2539): do_action('wp_enqueue_scri...')
+#4 /var/www/wp-includes/class-wp-hook.php(286): wp_enqueue_scripts('')
+#5 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#7 /var/www/wp-includes/general-template.php(2745): do_action('wp_head')
+#8 /var/www/wp-content/themes/Divi/header.php(27): wp_head()
+#9 /var/www/wp-includes/template.php(722): require_once('/var/www/wp-con...')
+#10 /var/www/wp-includes/template.php(671): load_template('/var/www/wp-con...', true)
+#11 /var/www/wp-includes/general- in /var/www/wp-content/themes/Divi/includes/builder/feature/woocommerce-modules.php on line 779
+

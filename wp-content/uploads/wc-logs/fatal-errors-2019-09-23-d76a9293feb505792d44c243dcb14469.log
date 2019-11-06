@@ -1,0 +1,8 @@
+2019-09-23T17:56:20+00:00 CRITICAL Uncaught RuntimeException: Error saving action: Invalid order. in /var/www/wp-content/plugins/woocommerce/includes/libraries/action-scheduler/classes/ActionScheduler_wpPostStore.php:33
+Stack trace:
+#0 /var/www/wp-content/plugins/woocommerce/includes/libraries/action-scheduler/classes/ActionScheduler_ActionFactory.php(109): ActionScheduler_wpPostStore->save_action(Object(ActionScheduler_Action))
+#1 /var/www/wp-content/plugins/woocommerce/includes/libraries/action-scheduler/classes/ActionScheduler_ActionFactory.php(59): ActionScheduler_ActionFactory->store(Object(ActionScheduler_Action))
+#2 /var/www/wp-content/plugins/woocommerce/includes/libraries/action-scheduler/functions.php(18): ActionScheduler_ActionFactory->single('wc-admin_import...', Array, 1569261385, 'wc-admin-data')
+#3 /var/www/wp-content/plugins/woocommerce/includes/queue/class-wc-action-queue.php(44): as_schedule_single_action(1569261385, 'wc-admin_import...', Array, 'wc-admin-data')
+#4 /var/www/wp-content/plugins/woocommerce-admin/src/ReportsSync in /var/www/wp-content/plugins/woocommerce/includes/libraries/action-scheduler/classes/ActionScheduler_wpPostStore.php on line 33
+

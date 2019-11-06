@@ -1,0 +1,761 @@
+2019-09-20T10:19:25+00:00 CRITICAL Uncaught Error: Call to undefined function et_is_responsive_images_enabled() in /var/www/wp-content/themes/Divi/post_thumbnails_divi.php:32
+Stack trace:
+#0 /var/www/wp-content/themes/Divi/functions.php(38): require_once()
+#1 /var/www/wp-includes/class-wp-hook.php(286): et_setup_theme('')
+#2 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#3 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#4 /var/www/wp-settings.php(509): do_action('after_setup_the...')
+#5 /var/www/wp-config.php(96): require_once('/var/www/wp-set...')
+#6 /var/www/wp-load.php(37): require_once('/var/www/wp-con...')
+#7 /var/www/wp-admin/admin-ajax.php(22): require_once('/var/www/wp-loa...')
+#8 {main}
+  thrown in /var/www/wp-content/themes/Divi/post_thumbnails_divi.php on line 32
+
+2019-09-20T10:19:26+00:00 CRITICAL Uncaught Error: Call to undefined function et_is_responsive_images_enabled() in /var/www/wp-content/themes/Divi/post_thumbnails_divi.php:32
+Stack trace:
+#0 /var/www/wp-content/themes/Divi/functions.php(38): require_once()
+#1 /var/www/wp-includes/class-wp-hook.php(286): et_setup_theme('')
+#2 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#3 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#4 /var/www/wp-settings.php(509): do_action('after_setup_the...')
+#5 /var/www/wp-config.php(96): require_once('/var/www/wp-set...')
+#6 /var/www/wp-load.php(37): require_once('/var/www/wp-con...')
+#7 /var/www/wp-blog-header.php(13): require_once('/var/www/wp-loa...')
+#8 /var/www/index.php(17): require('/var/www/wp-blo...')
+#9 {main}
+  thrown in /var/www/wp-content/themes/Divi/post_thumbnails_divi.php on line 32
+
+2019-09-20T10:19:26+00:00 CRITICAL Uncaught Error: Call to undefined function et_is_responsive_images_enabled() in /var/www/wp-content/themes/Divi/post_thumbnails_divi.php:32
+Stack trace:
+#0 /var/www/wp-content/themes/Divi/functions.php(38): require_once()
+#1 /var/www/wp-includes/class-wp-hook.php(286): et_setup_theme('')
+#2 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#3 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#4 /var/www/wp-settings.php(509): do_action('after_setup_the...')
+#5 /var/www/wp-config.php(96): require_once('/var/www/wp-set...')
+#6 /var/www/wp-load.php(37): require_once('/var/www/wp-con...')
+#7 /var/www/wp-admin/admin.php(34): require_once('/var/www/wp-loa...')
+#8 /var/www/wp-admin/post.php(12): require_once('/var/www/wp-adm...')
+#9 {main}
+  thrown in /var/www/wp-content/themes/Divi/post_thumbnails_divi.php on line 32
+
+2019-09-20T10:19:34+00:00 CRITICAL Uncaught Error: Call to undefined function et_pb_option_template() in /var/www/wp-content/themes/Divi/includes/builder/module/field/BoxShadow.php:17
+Stack trace:
+#0 /var/www/wp-content/themes/Divi/includes/builder/module/field/BoxShadow.php(560): ET_Builder_Module_Field_BoxShadow->__construct()
+#1 /var/www/wp-content/themes/Divi/includes/builder/module/field/Factory.php(18): require_once('/var/www/wp-con...')
+#2 /var/www/wp-content/themes/Divi/includes/builder/class-et-builder-element.php(16481): ET_Builder_Module_Fields_Factory::get('BoxShadow')
+#3 /var/www/wp-content/themes/Divi/includes/builder/framework.php(554): ET_Builder_Element::init_cache()
+#4 /var/www/wp-includes/class-wp-hook.php(286): et_builder_add_main_elements('')
+#5 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#7 /var/www/wp-settings.php(546): do_action('wp_loaded')
+#8 /var/www/wp-config.php(96): require_once('/var/www/wp-set...')
+#9 /var/www in /var/www/wp-content/themes/Divi/includes/builder/module/field/BoxShadow.php on line 17
+
+2019-09-20T10:19:47+00:00 CRITICAL Uncaught Error: Call to undefined function et_pb_option_template() in /var/www/wp-content/themes/Divi/includes/builder/module/field/BoxShadow.php:17
+Stack trace:
+#0 /var/www/wp-content/themes/Divi/includes/builder/module/field/BoxShadow.php(560): ET_Builder_Module_Field_BoxShadow->__construct()
+#1 /var/www/wp-content/themes/Divi/includes/builder/module/field/Factory.php(18): require_once('/var/www/wp-con...')
+#2 /var/www/wp-content/themes/Divi/includes/builder/class-et-builder-element.php(16481): ET_Builder_Module_Fields_Factory::get('BoxShadow')
+#3 /var/www/wp-content/themes/Divi/includes/builder/framework.php(554): ET_Builder_Element::init_cache()
+#4 /var/www/wp-includes/class-wp-hook.php(286): et_builder_add_main_elements('')
+#5 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#7 /var/www/wp-settings.php(546): do_action('wp_loaded')
+#8 /var/www/wp-config.php(96): require_once('/var/www/wp-set...')
+#9 /var/www in /var/www/wp-content/themes/Divi/includes/builder/module/field/BoxShadow.php on line 17
+
+2019-09-20T11:05:51+00:00 CRITICAL Uncaught Error: Class 'ET_Core_Support_Center' not found in /var/www/wp-content/themes/Divi/functions.php:6640
+Stack trace:
+#0 /var/www/wp-includes/class-wp-hook.php(286): et_add_divi_support_center('')
+#1 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/wp-settings.php(525): do_action('init')
+#4 /var/www/wp-config.php(96): require_once('/var/www/wp-set...')
+#5 /var/www/wp-load.php(37): require_once('/var/www/wp-con...')
+#6 /var/www/wp-admin/admin.php(34): require_once('/var/www/wp-loa...')
+#7 /var/www/wp-admin/post.php(12): require_once('/var/www/wp-adm...')
+#8 {main}
+  thrown in /var/www/wp-content/themes/Divi/functions.php on line 6640
+
+2019-09-20T11:05:51+00:00 CRITICAL Uncaught Error: Class 'ET_Core_Support_Center' not found in /var/www/wp-content/themes/Divi/functions.php:6640
+Stack trace:
+#0 /var/www/wp-includes/class-wp-hook.php(286): et_add_divi_support_center('')
+#1 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/wp-settings.php(525): do_action('init')
+#4 /var/www/wp-config.php(96): require_once('/var/www/wp-set...')
+#5 /var/www/wp-load.php(37): require_once('/var/www/wp-con...')
+#6 /var/www/wp-admin/admin-ajax.php(22): require_once('/var/www/wp-loa...')
+#7 {main}
+  thrown in /var/www/wp-content/themes/Divi/functions.php on line 6640
+
+2019-09-20T11:05:53+00:00 CRITICAL Uncaught Error: Class 'ET_Core_Support_Center' not found in /var/www/wp-content/themes/Divi/functions.php:6640
+Stack trace:
+#0 /var/www/wp-includes/class-wp-hook.php(286): et_add_divi_support_center('')
+#1 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/wp-settings.php(525): do_action('init')
+#4 /var/www/wp-config.php(96): require_once('/var/www/wp-set...')
+#5 /var/www/wp-load.php(37): require_once('/var/www/wp-con...')
+#6 /var/www/wp-admin/admin.php(34): require_once('/var/www/wp-loa...')
+#7 /var/www/wp-admin/post.php(12): require_once('/var/www/wp-adm...')
+#8 {main}
+  thrown in /var/www/wp-content/themes/Divi/functions.php on line 6640
+
+2019-09-20T11:06:08+00:00 CRITICAL Uncaught Error: Class 'ET_Core_Support_Center' not found in /var/www/wp-content/themes/Divi/functions.php:6640
+Stack trace:
+#0 /var/www/wp-includes/class-wp-hook.php(286): et_add_divi_support_center('')
+#1 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/wp-settings.php(525): do_action('init')
+#4 /var/www/wp-config.php(96): require_once('/var/www/wp-set...')
+#5 /var/www/wp-load.php(37): require_once('/var/www/wp-con...')
+#6 /var/www/wp-admin/admin.php(34): require_once('/var/www/wp-loa...')
+#7 /var/www/wp-admin/post.php(12): require_once('/var/www/wp-adm...')
+#8 {main}
+  thrown in /var/www/wp-content/themes/Divi/functions.php on line 6640
+
+2019-09-20T11:09:55+00:00 CRITICAL Uncaught Error: Class 'ET_Core_Support_Center' not found in /var/www/wp-content/themes/Divi/functions.php:6640
+Stack trace:
+#0 /var/www/wp-includes/class-wp-hook.php(286): et_add_divi_support_center('')
+#1 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/wp-settings.php(525): do_action('init')
+#4 /var/www/wp-config.php(96): require_once('/var/www/wp-set...')
+#5 /var/www/wp-load.php(37): require_once('/var/www/wp-con...')
+#6 /var/www/wp-admin/admin.php(34): require_once('/var/www/wp-loa...')
+#7 /var/www/wp-admin/post.php(12): require_once('/var/www/wp-adm...')
+#8 {main}
+  thrown in /var/www/wp-content/themes/Divi/functions.php on line 6640
+
+2019-09-20T11:10:43+00:00 CRITICAL Uncaught Error: Class 'ET_Core_Support_Center' not found in /var/www/wp-content/themes/Divi/functions.php:6640
+Stack trace:
+#0 /var/www/wp-includes/class-wp-hook.php(286): et_add_divi_support_center('')
+#1 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/wp-settings.php(525): do_action('init')
+#4 /var/www/wp-config.php(96): require_once('/var/www/wp-set...')
+#5 /var/www/wp-load.php(37): require_once('/var/www/wp-con...')
+#6 /var/www/wp-admin/admin.php(34): require_once('/var/www/wp-loa...')
+#7 /var/www/wp-admin/post.php(12): require_once('/var/www/wp-adm...')
+#8 {main}
+  thrown in /var/www/wp-content/themes/Divi/functions.php on line 6640
+
+2019-09-20T11:11:16+00:00 CRITICAL Uncaught Error: Class 'ET_Core_Support_Center' not found in /var/www/wp-content/themes/Divi/functions.php:6640
+Stack trace:
+#0 /var/www/wp-includes/class-wp-hook.php(286): et_add_divi_support_center('')
+#1 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/wp-settings.php(525): do_action('init')
+#4 /var/www/wp-config.php(96): require_once('/var/www/wp-set...')
+#5 /var/www/wp-load.php(37): require_once('/var/www/wp-con...')
+#6 /var/www/wp-admin/admin.php(34): require_once('/var/www/wp-loa...')
+#7 /var/www/wp-admin/post.php(12): require_once('/var/www/wp-adm...')
+#8 {main}
+  thrown in /var/www/wp-content/themes/Divi/functions.php on line 6640
+
+2019-09-20T11:12:11+00:00 CRITICAL Uncaught Error: Class 'ET_Core_Support_Center' not found in /var/www/wp-content/themes/Divi/functions.php:6640
+Stack trace:
+#0 /var/www/wp-includes/class-wp-hook.php(286): et_add_divi_support_center('')
+#1 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/wp-settings.php(525): do_action('init')
+#4 /var/www/wp-config.php(98): require_once('/var/www/wp-set...')
+#5 /var/www/wp-load.php(37): require_once('/var/www/wp-con...')
+#6 /var/www/wp-admin/admin.php(34): require_once('/var/www/wp-loa...')
+#7 /var/www/wp-admin/post.php(12): require_once('/var/www/wp-adm...')
+#8 {main}
+  thrown in /var/www/wp-content/themes/Divi/functions.php on line 6640
+
+2019-09-20T11:12:38+00:00 CRITICAL Uncaught Error: Class 'ET_Core_Support_Center' not found in /var/www/wp-content/themes/Divi/functions.php:6640
+Stack trace:
+#0 /var/www/wp-includes/class-wp-hook.php(286): et_add_divi_support_center('')
+#1 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/wp-settings.php(525): do_action('init')
+#4 /var/www/wp-config.php(100): require_once('/var/www/wp-set...')
+#5 /var/www/wp-load.php(37): require_once('/var/www/wp-con...')
+#6 /var/www/wp-admin/admin.php(34): require_once('/var/www/wp-loa...')
+#7 /var/www/wp-admin/post.php(12): require_once('/var/www/wp-adm...')
+#8 {main}
+  thrown in /var/www/wp-content/themes/Divi/functions.php on line 6640
+
+2019-09-20T11:12:58+00:00 CRITICAL Uncaught Error: Class 'ET_Core_Support_Center' not found in /var/www/wp-content/themes/Divi/functions.php:6640
+Stack trace:
+#0 /var/www/wp-includes/class-wp-hook.php(286): et_add_divi_support_center('')
+#1 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/wp-settings.php(525): do_action('init')
+#4 /var/www/wp-config.php(109): require_once('/var/www/wp-set...')
+#5 /var/www/wp-load.php(37): require_once('/var/www/wp-con...')
+#6 /var/www/wp-admin/admin.php(34): require_once('/var/www/wp-loa...')
+#7 /var/www/wp-admin/post.php(12): require_once('/var/www/wp-adm...')
+#8 {main}
+  thrown in /var/www/wp-content/themes/Divi/functions.php on line 6640
+
+2019-09-20T11:12:59+00:00 CRITICAL Uncaught Error: Class 'ET_Core_Support_Center' not found in /var/www/wp-content/themes/Divi/functions.php:6640
+Stack trace:
+#0 /var/www/wp-includes/class-wp-hook.php(286): et_add_divi_support_center('')
+#1 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/wp-settings.php(525): do_action('init')
+#4 /var/www/wp-config.php(109): require_once('/var/www/wp-set...')
+#5 /var/www/wp-load.php(37): require_once('/var/www/wp-con...')
+#6 /var/www/wp-admin/admin.php(34): require_once('/var/www/wp-loa...')
+#7 /var/www/wp-admin/post.php(12): require_once('/var/www/wp-adm...')
+#8 {main}
+  thrown in /var/www/wp-content/themes/Divi/functions.php on line 6640
+
+2019-09-20T11:13:00+00:00 CRITICAL Uncaught Error: Class 'ET_Core_Support_Center' not found in /var/www/wp-content/themes/Divi/functions.php:6640
+Stack trace:
+#0 /var/www/wp-includes/class-wp-hook.php(286): et_add_divi_support_center('')
+#1 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/wp-settings.php(525): do_action('init')
+#4 /var/www/wp-config.php(109): require_once('/var/www/wp-set...')
+#5 /var/www/wp-load.php(37): require_once('/var/www/wp-con...')
+#6 /var/www/wp-admin/admin.php(34): require_once('/var/www/wp-loa...')
+#7 /var/www/wp-admin/post.php(12): require_once('/var/www/wp-adm...')
+#8 {main}
+  thrown in /var/www/wp-content/themes/Divi/functions.php on line 6640
+
+2019-09-20T11:13:19+00:00 CRITICAL Uncaught Error: Class 'ET_Core_Support_Center' not found in /var/www/wp-content/themes/Divi/functions.php:6640
+Stack trace:
+#0 /var/www/wp-includes/class-wp-hook.php(286): et_add_divi_support_center('')
+#1 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/wp-settings.php(525): do_action('init')
+#4 /var/www/wp-config.php(109): require_once('/var/www/wp-set...')
+#5 /var/www/wp-load.php(37): require_once('/var/www/wp-con...')
+#6 /var/www/wp-admin/admin.php(34): require_once('/var/www/wp-loa...')
+#7 /var/www/wp-admin/post.php(12): require_once('/var/www/wp-adm...')
+#8 {main}
+  thrown in /var/www/wp-content/themes/Divi/functions.php on line 6640
+
+2019-09-20T11:13:22+00:00 CRITICAL Uncaught Error: Class 'ET_Core_Support_Center' not found in /var/www/wp-content/themes/Divi/functions.php:6640
+Stack trace:
+#0 /var/www/wp-includes/class-wp-hook.php(286): et_add_divi_support_center('')
+#1 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/wp-settings.php(525): do_action('init')
+#4 /var/www/wp-config.php(109): require_once('/var/www/wp-set...')
+#5 /var/www/wp-load.php(37): require_once('/var/www/wp-con...')
+#6 /var/www/wp-admin/admin.php(34): require_once('/var/www/wp-loa...')
+#7 /var/www/wp-admin/post.php(12): require_once('/var/www/wp-adm...')
+#8 {main}
+  thrown in /var/www/wp-content/themes/Divi/functions.php on line 6640
+
+2019-09-20T11:15:23+00:00 CRITICAL Uncaught Error: Class 'ET_Core_Support_Center' not found in /var/www/wp-content/themes/Divi/functions.php:6640
+Stack trace:
+#0 /var/www/wp-includes/class-wp-hook.php(286): et_add_divi_support_center('')
+#1 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/wp-settings.php(525): do_action('init')
+#4 /var/www/wp-config.php(109): require_once('/var/www/wp-set...')
+#5 /var/www/wp-load.php(37): require_once('/var/www/wp-con...')
+#6 /var/www/wp-blog-header.php(13): require_once('/var/www/wp-loa...')
+#7 /var/www/index.php(17): require('/var/www/wp-blo...')
+#8 {main}
+  thrown in /var/www/wp-content/themes/Divi/functions.php on line 6640
+
+2019-09-20T11:22:22+00:00 CRITICAL Uncaught Error: Class 'ET_Core_Support_Center' not found in /var/www/wp-content/themes/Divi/functions.php:6640
+Stack trace:
+#0 /var/www/wp-includes/class-wp-hook.php(286): et_add_divi_support_center('')
+#1 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/wp-settings.php(525): do_action('init')
+#4 /var/www/wp-config.php(109): require_once('/var/www/wp-set...')
+#5 /var/www/wp-load.php(37): require_once('/var/www/wp-con...')
+#6 /var/www/wp-login.php(12): require('/var/www/wp-loa...')
+#7 {main}
+  thrown in /var/www/wp-content/themes/Divi/functions.php on line 6640
+
+2019-09-20T11:35:17+00:00 CRITICAL Uncaught Error: Class 'ET_Core_Support_Center' not found in /var/www/wp-content/themes/Divi/functions.php:6640
+Stack trace:
+#0 /var/www/wp-includes/class-wp-hook.php(286): et_add_divi_support_center('')
+#1 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/wp-settings.php(525): do_action('init')
+#4 /var/www/wp-config.php(109): require_once('/var/www/wp-set...')
+#5 /var/www/wp-load.php(37): require_once('/var/www/wp-con...')
+#6 /var/www/wp-blog-header.php(13): require_once('/var/www/wp-loa...')
+#7 /var/www/index.php(17): require('/var/www/wp-blo...')
+#8 {main}
+  thrown in /var/www/wp-content/themes/Divi/functions.php on line 6640
+
+2019-09-20T11:35:48+00:00 CRITICAL Uncaught Error: Class 'ET_Core_Support_Center' not found in /var/www/wp-content/themes/Divi/functions.php:6640
+Stack trace:
+#0 /var/www/wp-includes/class-wp-hook.php(286): et_add_divi_support_center('')
+#1 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/wp-settings.php(525): do_action('init')
+#4 /var/www/wp-config.php(109): require_once('/var/www/wp-set...')
+#5 /var/www/wp-load.php(37): require_once('/var/www/wp-con...')
+#6 /var/www/wp-admin/admin.php(34): require_once('/var/www/wp-loa...')
+#7 /var/www/wp-admin/post.php(12): require_once('/var/www/wp-adm...')
+#8 {main}
+  thrown in /var/www/wp-content/themes/Divi/functions.php on line 6640
+
+2019-09-20T11:36:13+00:00 CRITICAL Uncaught Error: Class 'ET_Core_Support_Center' not found in /var/www/wp-content/themes/Divi/functions.php:6640
+Stack trace:
+#0 /var/www/wp-includes/class-wp-hook.php(286): et_add_divi_support_center('')
+#1 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/wp-settings.php(525): do_action('init')
+#4 /var/www/wp-config.php(109): require_once('/var/www/wp-set...')
+#5 /var/www/wp-load.php(37): require_once('/var/www/wp-con...')
+#6 /var/www/wp-login.php(12): require('/var/www/wp-loa...')
+#7 {main}
+  thrown in /var/www/wp-content/themes/Divi/functions.php on line 6640
+
+2019-09-20T11:36:40+00:00 CRITICAL Uncaught Error: Class 'ET_Core_Support_Center' not found in /var/www/wp-content/themes/Divi/functions.php:6640
+Stack trace:
+#0 /var/www/wp-includes/class-wp-hook.php(286): et_add_divi_support_center('')
+#1 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/wp-settings.php(525): do_action('init')
+#4 /var/www/wp-config.php(109): require_once('/var/www/wp-set...')
+#5 /var/www/wp-load.php(37): require_once('/var/www/wp-con...')
+#6 /var/www/wp-admin/admin.php(34): require_once('/var/www/wp-loa...')
+#7 /var/www/wp-admin/post.php(12): require_once('/var/www/wp-adm...')
+#8 {main}
+  thrown in /var/www/wp-content/themes/Divi/functions.php on line 6640
+
+2019-09-20T11:38:05+00:00 CRITICAL Uncaught Error: Class 'ET_Core_Support_Center' not found in /var/www/wp-content/themes/Divi/functions.php:6640
+Stack trace:
+#0 /var/www/wp-includes/class-wp-hook.php(286): et_add_divi_support_center('')
+#1 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/wp-settings.php(525): do_action('init')
+#4 /var/www/wp-config.php(109): require_once('/var/www/wp-set...')
+#5 /var/www/wp-load.php(37): require_once('/var/www/wp-con...')
+#6 /var/www/wp-blog-header.php(13): require_once('/var/www/wp-loa...')
+#7 /var/www/index.php(17): require('/var/www/wp-blo...')
+#8 {main}
+  thrown in /var/www/wp-content/themes/Divi/functions.php on line 6640
+
+2019-09-20T11:38:24+00:00 CRITICAL Uncaught Error: Class 'ET_Core_Support_Center' not found in /var/www/wp-content/themes/Divi/functions.php:6640
+Stack trace:
+#0 /var/www/wp-includes/class-wp-hook.php(286): et_add_divi_support_center('')
+#1 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/wp-settings.php(525): do_action('init')
+#4 /var/www/wp-config.php(109): require_once('/var/www/wp-set...')
+#5 /var/www/wp-load.php(37): require_once('/var/www/wp-con...')
+#6 /var/www/wp-blog-header.php(13): require_once('/var/www/wp-loa...')
+#7 /var/www/index.php(17): require('/var/www/wp-blo...')
+#8 {main}
+  thrown in /var/www/wp-content/themes/Divi/functions.php on line 6640
+
+2019-09-20T11:38:27+00:00 CRITICAL Uncaught Error: Class 'ET_Core_Support_Center' not found in /var/www/wp-content/themes/Divi/functions.php:6640
+Stack trace:
+#0 /var/www/wp-includes/class-wp-hook.php(286): et_add_divi_support_center('')
+#1 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/wp-settings.php(525): do_action('init')
+#4 /var/www/wp-config.php(109): require_once('/var/www/wp-set...')
+#5 /var/www/wp-load.php(37): require_once('/var/www/wp-con...')
+#6 /var/www/wp-blog-header.php(13): require_once('/var/www/wp-loa...')
+#7 /var/www/index.php(17): require('/var/www/wp-blo...')
+#8 {main}
+  thrown in /var/www/wp-content/themes/Divi/functions.php on line 6640
+
+2019-09-20T11:38:28+00:00 CRITICAL Uncaught Error: Class 'ET_Core_Support_Center' not found in /var/www/wp-content/themes/Divi/functions.php:6640
+Stack trace:
+#0 /var/www/wp-includes/class-wp-hook.php(286): et_add_divi_support_center('')
+#1 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/wp-settings.php(525): do_action('init')
+#4 /var/www/wp-config.php(109): require_once('/var/www/wp-set...')
+#5 /var/www/wp-load.php(37): require_once('/var/www/wp-con...')
+#6 /var/www/wp-blog-header.php(13): require_once('/var/www/wp-loa...')
+#7 /var/www/index.php(17): require('/var/www/wp-blo...')
+#8 {main}
+  thrown in /var/www/wp-content/themes/Divi/functions.php on line 6640
+
+2019-09-20T11:38:29+00:00 CRITICAL Uncaught Error: Class 'ET_Core_Support_Center' not found in /var/www/wp-content/themes/Divi/functions.php:6640
+Stack trace:
+#0 /var/www/wp-includes/class-wp-hook.php(286): et_add_divi_support_center('')
+#1 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/wp-settings.php(525): do_action('init')
+#4 /var/www/wp-config.php(109): require_once('/var/www/wp-set...')
+#5 /var/www/wp-load.php(37): require_once('/var/www/wp-con...')
+#6 /var/www/wp-blog-header.php(13): require_once('/var/www/wp-loa...')
+#7 /var/www/index.php(17): require('/var/www/wp-blo...')
+#8 {main}
+  thrown in /var/www/wp-content/themes/Divi/functions.php on line 6640
+
+2019-09-20T11:38:30+00:00 CRITICAL Uncaught Error: Class 'ET_Core_Support_Center' not found in /var/www/wp-content/themes/Divi/functions.php:6640
+Stack trace:
+#0 /var/www/wp-includes/class-wp-hook.php(286): et_add_divi_support_center('')
+#1 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/wp-settings.php(525): do_action('init')
+#4 /var/www/wp-config.php(109): require_once('/var/www/wp-set...')
+#5 /var/www/wp-load.php(37): require_once('/var/www/wp-con...')
+#6 /var/www/wp-blog-header.php(13): require_once('/var/www/wp-loa...')
+#7 /var/www/index.php(17): require('/var/www/wp-blo...')
+#8 {main}
+  thrown in /var/www/wp-content/themes/Divi/functions.php on line 6640
+
+2019-09-20T11:38:46+00:00 CRITICAL Uncaught Error: Class 'ET_Core_Support_Center' not found in /var/www/wp-content/themes/Divi/functions.php:6640
+Stack trace:
+#0 /var/www/wp-includes/class-wp-hook.php(286): et_add_divi_support_center('')
+#1 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/wp-settings.php(525): do_action('init')
+#4 /var/www/wp-config.php(109): require_once('/var/www/wp-set...')
+#5 /var/www/wp-load.php(37): require_once('/var/www/wp-con...')
+#6 /var/www/wp-blog-header.php(13): require_once('/var/www/wp-loa...')
+#7 /var/www/index.php(17): require('/var/www/wp-blo...')
+#8 {main}
+  thrown in /var/www/wp-content/themes/Divi/functions.php on line 6640
+
+2019-09-20T11:38:47+00:00 CRITICAL Uncaught Error: Class 'ET_Core_Support_Center' not found in /var/www/wp-content/themes/Divi/functions.php:6640
+Stack trace:
+#0 /var/www/wp-includes/class-wp-hook.php(286): et_add_divi_support_center('')
+#1 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/wp-settings.php(525): do_action('init')
+#4 /var/www/wp-config.php(109): require_once('/var/www/wp-set...')
+#5 /var/www/wp-load.php(37): require_once('/var/www/wp-con...')
+#6 /var/www/wp-blog-header.php(13): require_once('/var/www/wp-loa...')
+#7 /var/www/index.php(17): require('/var/www/wp-blo...')
+#8 {main}
+  thrown in /var/www/wp-content/themes/Divi/functions.php on line 6640
+
+2019-09-20T11:41:53+00:00 CRITICAL Uncaught Error: Class 'ET_Core_Support_Center' not found in /var/www/wp-content/themes/Divi/functions.php:6640
+Stack trace:
+#0 /var/www/wp-includes/class-wp-hook.php(286): et_add_divi_support_center('')
+#1 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/wp-settings.php(525): do_action('init')
+#4 /var/www/wp-config.php(109): require_once('/var/www/wp-set...')
+#5 /var/www/wp-load.php(37): require_once('/var/www/wp-con...')
+#6 /var/www/wp-blog-header.php(13): require_once('/var/www/wp-loa...')
+#7 /var/www/index.php(17): require('/var/www/wp-blo...')
+#8 {main}
+  thrown in /var/www/wp-content/themes/Divi/functions.php on line 6640
+
+2019-09-20T11:47:42+00:00 CRITICAL Uncaught Error: Class 'ET_Core_Support_Center' not found in /var/www/wp-content/themes/Divi/functions.php:6640
+Stack trace:
+#0 /var/www/wp-includes/class-wp-hook.php(286): et_add_divi_support_center('')
+#1 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/wp-settings.php(525): do_action('init')
+#4 /var/www/wp-config.php(109): require_once('/var/www/wp-set...')
+#5 /var/www/wp-load.php(37): require_once('/var/www/wp-con...')
+#6 /var/www/wp-blog-header.php(13): require_once('/var/www/wp-loa...')
+#7 /var/www/index.php(17): require('/var/www/wp-blo...')
+#8 {main}
+  thrown in /var/www/wp-content/themes/Divi/functions.php on line 6640
+
+2019-09-20T11:48:10+00:00 CRITICAL Uncaught Error: Call to undefined function elegant_description() in /var/www/wp-content/themes/Divi/header.php:6
+Stack trace:
+#0 /var/www/wp-includes/template.php(722): require_once()
+#1 /var/www/wp-includes/template.php(671): load_template('/var/www/wp-con...', true)
+#2 /var/www/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /var/www/wp-content/themes/Divi/page.php(3): get_header()
+#4 /var/www/wp-includes/template-loader.php(78): include('/var/www/wp-con...')
+#5 /var/www/wp-blog-header.php(19): require_once('/var/www/wp-inc...')
+#6 /var/www/index.php(17): require('/var/www/wp-blo...')
+#7 {main}
+  thrown in /var/www/wp-content/themes/Divi/header.php on line 6
+
+2019-09-20T11:48:12+00:00 CRITICAL Uncaught Error: Call to undefined function elegant_description() in /var/www/wp-content/themes/Divi/header.php:6
+Stack trace:
+#0 /var/www/wp-includes/template.php(722): require_once()
+#1 /var/www/wp-includes/template.php(671): load_template('/var/www/wp-con...', true)
+#2 /var/www/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /var/www/wp-content/themes/Divi/page.php(3): get_header()
+#4 /var/www/wp-includes/template-loader.php(78): include('/var/www/wp-con...')
+#5 /var/www/wp-blog-header.php(19): require_once('/var/www/wp-inc...')
+#6 /var/www/index.php(17): require('/var/www/wp-blo...')
+#7 {main}
+  thrown in /var/www/wp-content/themes/Divi/header.php on line 6
+
+2019-09-20T11:48:13+00:00 CRITICAL Uncaught Error: Call to undefined function elegant_description() in /var/www/wp-content/themes/Divi/header.php:6
+Stack trace:
+#0 /var/www/wp-includes/template.php(722): require_once()
+#1 /var/www/wp-includes/template.php(671): load_template('/var/www/wp-con...', true)
+#2 /var/www/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /var/www/wp-content/themes/Divi/page.php(3): get_header()
+#4 /var/www/wp-includes/template-loader.php(78): include('/var/www/wp-con...')
+#5 /var/www/wp-blog-header.php(19): require_once('/var/www/wp-inc...')
+#6 /var/www/index.php(17): require('/var/www/wp-blo...')
+#7 {main}
+  thrown in /var/www/wp-content/themes/Divi/header.php on line 6
+
+2019-09-20T11:48:15+00:00 CRITICAL Uncaught Error: Class 'ET_Core_Support_Center' not found in /var/www/wp-content/themes/Divi/functions.php:6640
+Stack trace:
+#0 /var/www/wp-includes/class-wp-hook.php(286): et_add_divi_support_center('')
+#1 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/wp-settings.php(525): do_action('init')
+#4 /var/www/wp-config.php(109): require_once('/var/www/wp-set...')
+#5 /var/www/wp-load.php(37): require_once('/var/www/wp-con...')
+#6 /var/www/wp-blog-header.php(13): require_once('/var/www/wp-loa...')
+#7 /var/www/index.php(17): require('/var/www/wp-blo...')
+#8 {main}
+  thrown in /var/www/wp-content/themes/Divi/functions.php on line 6640
+
+2019-09-20T11:48:43+00:00 CRITICAL Uncaught Error: Class 'ET_Core_Support_Center' not found in /var/www/wp-content/themes/Divi/functions.php:6640
+Stack trace:
+#0 /var/www/wp-includes/class-wp-hook.php(286): et_add_divi_support_center('')
+#1 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/wp-settings.php(525): do_action('init')
+#4 /var/www/wp-config.php(109): require_once('/var/www/wp-set...')
+#5 /var/www/wp-load.php(37): require_once('/var/www/wp-con...')
+#6 /var/www/wp-blog-header.php(13): require_once('/var/www/wp-loa...')
+#7 /var/www/index.php(17): require('/var/www/wp-blo...')
+#8 {main}
+  thrown in /var/www/wp-content/themes/Divi/functions.php on line 6640
+
+2019-09-20T11:48:44+00:00 CRITICAL Uncaught Error: Class 'ET_Core_Support_Center' not found in /var/www/wp-content/themes/Divi/functions.php:6640
+Stack trace:
+#0 /var/www/wp-includes/class-wp-hook.php(286): et_add_divi_support_center('')
+#1 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/wp-settings.php(525): do_action('init')
+#4 /var/www/wp-config.php(109): require_once('/var/www/wp-set...')
+#5 /var/www/wp-load.php(37): require_once('/var/www/wp-con...')
+#6 /var/www/wp-blog-header.php(13): require_once('/var/www/wp-loa...')
+#7 /var/www/index.php(17): require('/var/www/wp-blo...')
+#8 {main}
+  thrown in /var/www/wp-content/themes/Divi/functions.php on line 6640
+
+2019-09-20T11:49:01+00:00 CRITICAL Uncaught Error: Class 'ET_Core_Support_Center' not found in /var/www/wp-content/themes/Divi/functions.php:6640
+Stack trace:
+#0 /var/www/wp-includes/class-wp-hook.php(286): et_add_divi_support_center('')
+#1 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/wp-settings.php(525): do_action('init')
+#4 /var/www/wp-config.php(109): require_once('/var/www/wp-set...')
+#5 /var/www/wp-load.php(37): require_once('/var/www/wp-con...')
+#6 /var/www/wp-blog-header.php(13): require_once('/var/www/wp-loa...')
+#7 /var/www/index.php(17): require('/var/www/wp-blo...')
+#8 {main}
+  thrown in /var/www/wp-content/themes/Divi/functions.php on line 6640
+
+2019-09-20T11:49:32+00:00 CRITICAL Uncaught Error: Class 'ET_Core_Support_Center' not found in /var/www/wp-content/themes/Divi/functions.php:6640
+Stack trace:
+#0 /var/www/wp-includes/class-wp-hook.php(286): et_add_divi_support_center('')
+#1 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/wp-settings.php(525): do_action('init')
+#4 /var/www/wp-config.php(109): require_once('/var/www/wp-set...')
+#5 /var/www/wp-load.php(37): require_once('/var/www/wp-con...')
+#6 /var/www/wp-blog-header.php(13): require_once('/var/www/wp-loa...')
+#7 /var/www/index.php(17): require('/var/www/wp-blo...')
+#8 {main}
+  thrown in /var/www/wp-content/themes/Divi/functions.php on line 6640
+
+2019-09-20T11:49:33+00:00 CRITICAL Uncaught Error: Class 'ET_Core_Support_Center' not found in /var/www/wp-content/themes/Divi/functions.php:6640
+Stack trace:
+#0 /var/www/wp-includes/class-wp-hook.php(286): et_add_divi_support_center('')
+#1 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/wp-settings.php(525): do_action('init')
+#4 /var/www/wp-config.php(109): require_once('/var/www/wp-set...')
+#5 /var/www/wp-load.php(37): require_once('/var/www/wp-con...')
+#6 /var/www/wp-blog-header.php(13): require_once('/var/www/wp-loa...')
+#7 /var/www/index.php(17): require('/var/www/wp-blo...')
+#8 {main}
+  thrown in /var/www/wp-content/themes/Divi/functions.php on line 6640
+
+2019-09-20T11:51:14+00:00 CRITICAL Uncaught Error: Class 'ET_Core_Support_Center' not found in /var/www/wp-content/themes/Divi/functions.php:6640
+Stack trace:
+#0 /var/www/wp-includes/class-wp-hook.php(286): et_add_divi_support_center('')
+#1 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/wp-settings.php(525): do_action('init')
+#4 /var/www/wp-config.php(109): require_once('/var/www/wp-set...')
+#5 /var/www/wp-load.php(37): require_once('/var/www/wp-con...')
+#6 /var/www/wp-blog-header.php(13): require_once('/var/www/wp-loa...')
+#7 /var/www/index.php(17): require('/var/www/wp-blo...')
+#8 {main}
+  thrown in /var/www/wp-content/themes/Divi/functions.php on line 6640
+
+2019-09-20T11:51:15+00:00 CRITICAL Uncaught Error: Class 'ET_Core_Support_Center' not found in /var/www/wp-content/themes/Divi/functions.php:6640
+Stack trace:
+#0 /var/www/wp-includes/class-wp-hook.php(286): et_add_divi_support_center('')
+#1 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/wp-settings.php(525): do_action('init')
+#4 /var/www/wp-config.php(109): require_once('/var/www/wp-set...')
+#5 /var/www/wp-load.php(37): require_once('/var/www/wp-con...')
+#6 /var/www/wp-blog-header.php(13): require_once('/var/www/wp-loa...')
+#7 /var/www/index.php(17): require('/var/www/wp-blo...')
+#8 {main}
+  thrown in /var/www/wp-content/themes/Divi/functions.php on line 6640
+
+2019-09-20T11:51:17+00:00 CRITICAL Uncaught Error: Class 'ET_Core_Support_Center' not found in /var/www/wp-content/themes/Divi/functions.php:6640
+Stack trace:
+#0 /var/www/wp-includes/class-wp-hook.php(286): et_add_divi_support_center('')
+#1 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/wp-settings.php(525): do_action('init')
+#4 /var/www/wp-config.php(109): require_once('/var/www/wp-set...')
+#5 /var/www/wp-load.php(37): require_once('/var/www/wp-con...')
+#6 /var/www/wp-admin/admin.php(34): require_once('/var/www/wp-loa...')
+#7 /var/www/wp-admin/post.php(12): require_once('/var/www/wp-adm...')
+#8 {main}
+  thrown in /var/www/wp-content/themes/Divi/functions.php on line 6640
+
+2019-09-20T11:51:18+00:00 CRITICAL Uncaught Error: Class 'ET_Core_Support_Center' not found in /var/www/wp-content/themes/Divi/functions.php:6640
+Stack trace:
+#0 /var/www/wp-includes/class-wp-hook.php(286): et_add_divi_support_center('')
+#1 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/wp-settings.php(525): do_action('init')
+#4 /var/www/wp-config.php(109): require_once('/var/www/wp-set...')
+#5 /var/www/wp-load.php(37): require_once('/var/www/wp-con...')
+#6 /var/www/wp-admin/admin.php(34): require_once('/var/www/wp-loa...')
+#7 /var/www/wp-admin/post.php(12): require_once('/var/www/wp-adm...')
+#8 {main}
+  thrown in /var/www/wp-content/themes/Divi/functions.php on line 6640
+
+2019-09-20T11:51:20+00:00 CRITICAL Uncaught Error: Class 'ET_Core_Support_Center' not found in /var/www/wp-content/themes/Divi/functions.php:6640
+Stack trace:
+#0 /var/www/wp-includes/class-wp-hook.php(286): et_add_divi_support_center('')
+#1 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/wp-settings.php(525): do_action('init')
+#4 /var/www/wp-config.php(109): require_once('/var/www/wp-set...')
+#5 /var/www/wp-load.php(37): require_once('/var/www/wp-con...')
+#6 /var/www/wp-admin/admin.php(34): require_once('/var/www/wp-loa...')
+#7 /var/www/wp-admin/post.php(12): require_once('/var/www/wp-adm...')
+#8 {main}
+  thrown in /var/www/wp-content/themes/Divi/functions.php on line 6640
+
+2019-09-20T11:51:31+00:00 CRITICAL Uncaught Error: Class 'ET_Core_Support_Center' not found in /var/www/wp-content/themes/Divi/functions.php:6640
+Stack trace:
+#0 /var/www/wp-includes/class-wp-hook.php(286): et_add_divi_support_center('')
+#1 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/wp-settings.php(525): do_action('init')
+#4 /var/www/wp-config.php(109): require_once('/var/www/wp-set...')
+#5 /var/www/wp-load.php(37): require_once('/var/www/wp-con...')
+#6 /var/www/wp-admin/admin.php(34): require_once('/var/www/wp-loa...')
+#7 /var/www/wp-admin/post.php(12): require_once('/var/www/wp-adm...')
+#8 {main}
+  thrown in /var/www/wp-content/themes/Divi/functions.php on line 6640
+
+2019-09-20T11:51:32+00:00 CRITICAL Uncaught Error: Class 'ET_Core_Support_Center' not found in /var/www/wp-content/themes/Divi/functions.php:6640
+Stack trace:
+#0 /var/www/wp-includes/class-wp-hook.php(286): et_add_divi_support_center('')
+#1 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/wp-settings.php(525): do_action('init')
+#4 /var/www/wp-config.php(109): require_once('/var/www/wp-set...')
+#5 /var/www/wp-load.php(37): require_once('/var/www/wp-con...')
+#6 /var/www/wp-admin/admin.php(34): require_once('/var/www/wp-loa...')
+#7 /var/www/wp-admin/post.php(12): require_once('/var/www/wp-adm...')
+#8 {main}
+  thrown in /var/www/wp-content/themes/Divi/functions.php on line 6640
+
+2019-09-20T11:52:54+00:00 CRITICAL Uncaught Error: Class 'ET_Core_Support_Center' not found in /var/www/wp-content/themes/Divi/functions.php:6640
+Stack trace:
+#0 /var/www/wp-includes/class-wp-hook.php(286): et_add_divi_support_center('')
+#1 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/wp-settings.php(525): do_action('init')
+#4 /var/www/wp-config.php(109): require_once('/var/www/wp-set...')
+#5 /var/www/wp-load.php(37): require_once('/var/www/wp-con...')
+#6 /var/www/wp-admin/admin.php(34): require_once('/var/www/wp-loa...')
+#7 /var/www/wp-admin/post.php(12): require_once('/var/www/wp-adm...')
+#8 {main}
+  thrown in /var/www/wp-content/themes/Divi/functions.php on line 6640
+
+2019-09-20T11:53:40+00:00 CRITICAL Uncaught Error: Class 'ET_Core_Support_Center' not found in /var/www/wp-content/themes/Divi/functions.php:6640
+Stack trace:
+#0 /var/www/wp-includes/class-wp-hook.php(286): et_add_divi_support_center('')
+#1 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/wp-settings.php(525): do_action('init')
+#4 /var/www/wp-config.php(109): require_once('/var/www/wp-set...')
+#5 /var/www/wp-load.php(37): require_once('/var/www/wp-con...')
+#6 /var/www/wp-admin/admin.php(34): require_once('/var/www/wp-loa...')
+#7 /var/www/wp-admin/post.php(12): require_once('/var/www/wp-adm...')
+#8 {main}
+  thrown in /var/www/wp-content/themes/Divi/functions.php on line 6640
+
+2019-09-20T11:53:45+00:00 CRITICAL Uncaught Error: Class 'ET_Core_Support_Center' not found in /var/www/wp-content/themes/Divi/functions.php:6640
+Stack trace:
+#0 /var/www/wp-includes/class-wp-hook.php(286): et_add_divi_support_center('')
+#1 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/wp-settings.php(525): do_action('init')
+#4 /var/www/wp-config.php(109): require_once('/var/www/wp-set...')
+#5 /var/www/wp-load.php(37): require_once('/var/www/wp-con...')
+#6 /var/www/wp-admin/admin.php(34): require_once('/var/www/wp-loa...')
+#7 /var/www/wp-admin/post.php(12): require_once('/var/www/wp-adm...')
+#8 {main}
+  thrown in /var/www/wp-content/themes/Divi/functions.php on line 6640
+
+2019-09-20T11:54:30+00:00 CRITICAL Uncaught Error: Class 'ET_Core_Support_Center' not found in /var/www/wp-content/themes/Divi/functions.php:6640
+Stack trace:
+#0 /var/www/wp-includes/class-wp-hook.php(286): et_add_divi_support_center('')
+#1 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/wp-settings.php(525): do_action('init')
+#4 /var/www/wp-config.php(109): require_once('/var/www/wp-set...')
+#5 /var/www/wp-load.php(37): require_once('/var/www/wp-con...')
+#6 /var/www/wp-admin/admin.php(34): require_once('/var/www/wp-loa...')
+#7 /var/www/wp-admin/post.php(12): require_once('/var/www/wp-adm...')
+#8 {main}
+  thrown in /var/www/wp-content/themes/Divi/functions.php on line 6640
+
+2019-09-20T11:55:05+00:00 CRITICAL Uncaught Error: Class 'ET_Core_Support_Center' not found in /var/www/wp-content/themes/Divi/functions.php:6640
+Stack trace:
+#0 /var/www/wp-includes/class-wp-hook.php(286): et_add_divi_support_center('')
+#1 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/wp-settings.php(525): do_action('init')
+#4 /var/www/wp-config.php(109): require_once('/var/www/wp-set...')
+#5 /var/www/wp-load.php(37): require_once('/var/www/wp-con...')
+#6 /var/www/wp-blog-header.php(13): require_once('/var/www/wp-loa...')
+#7 /var/www/index.php(17): require('/var/www/wp-blo...')
+#8 {main}
+  thrown in /var/www/wp-content/themes/Divi/functions.php on line 6640
+
+2019-09-20T11:55:27+00:00 CRITICAL Uncaught Error: Class 'ET_Core_Support_Center' not found in /var/www/wp-content/themes/Divi/functions.php:6640
+Stack trace:
+#0 /var/www/wp-includes/class-wp-hook.php(286): et_add_divi_support_center('')
+#1 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/wp-settings.php(525): do_action('init')
+#4 /var/www/wp-config.php(109): require_once('/var/www/wp-set...')
+#5 /var/www/wp-load.php(37): require_once('/var/www/wp-con...')
+#6 /var/www/wp-blog-header.php(13): require_once('/var/www/wp-loa...')
+#7 /var/www/index.php(17): require('/var/www/wp-blo...')
+#8 {main}
+  thrown in /var/www/wp-content/themes/Divi/functions.php on line 6640
+
+2019-09-20T11:55:33+00:00 CRITICAL Uncaught Error: Class 'ET_Core_Support_Center' not found in /var/www/wp-content/themes/Divi/functions.php:6640
+Stack trace:
+#0 /var/www/wp-includes/class-wp-hook.php(286): et_add_divi_support_center('')
+#1 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/wp-settings.php(525): do_action('init')
+#4 /var/www/wp-config.php(109): require_once('/var/www/wp-set...')
+#5 /var/www/wp-load.php(37): require_once('/var/www/wp-con...')
+#6 /var/www/wp-blog-header.php(13): require_once('/var/www/wp-loa...')
+#7 /var/www/index.php(17): require('/var/www/wp-blo...')
+#8 {main}
+  thrown in /var/www/wp-content/themes/Divi/functions.php on line 6640
+
+2019-09-20T22:21:05+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Error as array in /var/www/wp-content/themes/Divi/includes/builder/core.php:1278
+Stack trace:
+#0 /var/www/wp-content/themes/Divi/includes/builder/core.php(1250): et_pb_create_layout('Footer 2', '[et_pb_section ...', Array, Array, 'Footer')
+#1 /var/www/wp-content/themes/Divi/includes/builder/functions.php(1599): et_pb_submit_layout(Array)
+#2 /var/www/wp-includes/class-wp-hook.php(286): et_fb_save_layout('')
+#3 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#4 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#5 /var/www/wp-admin/admin-ajax.php(173): do_action('wp_ajax_et_fb_s...')
+#6 {main}
+  thrown in /var/www/wp-content/themes/Divi/includes/builder/core.php on line 1278
+

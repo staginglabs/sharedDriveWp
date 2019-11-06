@@ -1,0 +1,524 @@
+2019-10-08T08:06:31+00:00 CRITICAL Object of class WC_Email_Customer_New_Account could not be converted to string in /var/www/wp-content/themes/Divi/woocommerce/emails/customer-new-account.php on line 34
+
+2019-10-08T08:14:45+00:00 CRITICAL Object of class WC_Email_Customer_New_Account could not be converted to string in /var/www/wp-content/themes/Divi/woocommerce/emails/customer-new-account.php on line 34
+
+2019-10-08T11:24:46+00:00 CRITICAL Uncaught Error: Call to undefined function elegant_description() in /var/www/wp-content/themes/Divi/header.php:6
+Stack trace:
+#0 /var/www/wp-includes/template.php(722): require_once()
+#1 /var/www/wp-includes/template.php(671): load_template('/var/www/wp-con...', true)
+#2 /var/www/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /var/www/wp-content/themes/Divi/page.php(3): get_header()
+#4 /var/www/wp-includes/template-loader.php(78): include('/var/www/wp-con...')
+#5 /var/www/wp-blog-header.php(19): require_once('/var/www/wp-inc...')
+#6 /var/www/index.php(17): require('/var/www/wp-blo...')
+#7 {main}
+  thrown in /var/www/wp-content/themes/Divi/header.php on line 6
+
+2019-10-08T11:24:48+00:00 CRITICAL Uncaught Error: Call to undefined function elegant_description() in /var/www/wp-content/themes/Divi/header.php:6
+Stack trace:
+#0 /var/www/wp-includes/template.php(722): require_once()
+#1 /var/www/wp-includes/template.php(671): load_template('/var/www/wp-con...', true)
+#2 /var/www/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /var/www/wp-content/themes/Divi/page.php(3): get_header()
+#4 /var/www/wp-includes/template-loader.php(78): include('/var/www/wp-con...')
+#5 /var/www/wp-blog-header.php(19): require_once('/var/www/wp-inc...')
+#6 /var/www/index.php(17): require('/var/www/wp-blo...')
+#7 {main}
+  thrown in /var/www/wp-content/themes/Divi/header.php on line 6
+
+2019-10-08T12:08:10+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) in /var/www/wp-content/themes/Divi/functions.php on line 7492
+
+2019-10-08T12:08:10+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) in /var/www/wp-content/themes/Divi/functions.php on line 7492
+
+2019-10-08T13:27:47+00:00 CRITICAL Uncaught Error: Call to undefined function elegant_description() in /var/www/wp-content/themes/Divi/header.php:6
+Stack trace:
+#0 /var/www/wp-includes/template.php(722): require_once()
+#1 /var/www/wp-includes/template.php(671): load_template('/var/www/wp-con...', true)
+#2 /var/www/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /var/www/wp-content/themes/Divi/page.php(3): get_header()
+#4 /var/www/wp-includes/template-loader.php(78): include('/var/www/wp-con...')
+#5 /var/www/wp-blog-header.php(19): require_once('/var/www/wp-inc...')
+#6 /var/www/index.php(17): require('/var/www/wp-blo...')
+#7 {main}
+  thrown in /var/www/wp-content/themes/Divi/header.php on line 6
+
+2019-10-08T14:14:13+00:00 CRITICAL Uncaught Error: Call to undefined function elegant_description() in /var/www/wp-content/themes/Divi/header.php:6
+Stack trace:
+#0 /var/www/wp-includes/template.php(722): require_once()
+#1 /var/www/wp-includes/template.php(671): load_template('/var/www/wp-con...', true)
+#2 /var/www/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /var/www/wp-content/themes/Divi/page.php(3): get_header()
+#4 /var/www/wp-includes/template-loader.php(78): include('/var/www/wp-con...')
+#5 /var/www/wp-blog-header.php(19): require_once('/var/www/wp-inc...')
+#6 /var/www/index.php(17): require('/var/www/wp-blo...')
+#7 {main}
+  thrown in /var/www/wp-content/themes/Divi/header.php on line 6
+
+2019-10-08T14:14:14+00:00 CRITICAL Uncaught Error: Call to undefined function elegant_description() in /var/www/wp-content/themes/Divi/header.php:6
+Stack trace:
+#0 /var/www/wp-includes/template.php(722): require_once()
+#1 /var/www/wp-includes/template.php(671): load_template('/var/www/wp-con...', true)
+#2 /var/www/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /var/www/wp-content/themes/Divi/page.php(3): get_header()
+#4 /var/www/wp-includes/template-loader.php(78): include('/var/www/wp-con...')
+#5 /var/www/wp-blog-header.php(19): require_once('/var/www/wp-inc...')
+#6 /var/www/index.php(17): require('/var/www/wp-blo...')
+#7 {main}
+  thrown in /var/www/wp-content/themes/Divi/header.php on line 6
+
+2019-10-08T14:14:16+00:00 CRITICAL Uncaught Error: Call to undefined function elegant_description() in /var/www/wp-content/themes/Divi/header.php:6
+Stack trace:
+#0 /var/www/wp-includes/template.php(722): require_once()
+#1 /var/www/wp-includes/template.php(671): load_template('/var/www/wp-con...', true)
+#2 /var/www/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /var/www/wp-content/themes/Divi/page.php(3): get_header()
+#4 /var/www/wp-includes/template-loader.php(78): include('/var/www/wp-con...')
+#5 /var/www/wp-blog-header.php(19): require_once('/var/www/wp-inc...')
+#6 /var/www/index.php(17): require('/var/www/wp-blo...')
+#7 {main}
+  thrown in /var/www/wp-content/themes/Divi/header.php on line 6
+
+2019-10-08T14:14:16+00:00 CRITICAL Uncaught Error: Call to undefined function elegant_description() in /var/www/wp-content/themes/Divi/header.php:6
+Stack trace:
+#0 /var/www/wp-includes/template.php(722): require_once()
+#1 /var/www/wp-includes/template.php(671): load_template('/var/www/wp-con...', true)
+#2 /var/www/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /var/www/wp-content/themes/Divi/page.php(3): get_header()
+#4 /var/www/wp-includes/template-loader.php(78): include('/var/www/wp-con...')
+#5 /var/www/wp-blog-header.php(19): require_once('/var/www/wp-inc...')
+#6 /var/www/index.php(17): require('/var/www/wp-blo...')
+#7 {main}
+  thrown in /var/www/wp-content/themes/Divi/header.php on line 6
+
+2019-10-08T14:14:16+00:00 CRITICAL Uncaught Error: Call to undefined function elegant_description() in /var/www/wp-content/themes/Divi/header.php:6
+Stack trace:
+#0 /var/www/wp-includes/template.php(722): require_once()
+#1 /var/www/wp-includes/template.php(671): load_template('/var/www/wp-con...', true)
+#2 /var/www/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /var/www/wp-content/themes/Divi/page.php(3): get_header()
+#4 /var/www/wp-includes/template-loader.php(78): include('/var/www/wp-con...')
+#5 /var/www/wp-blog-header.php(19): require_once('/var/www/wp-inc...')
+#6 /var/www/index.php(17): require('/var/www/wp-blo...')
+#7 {main}
+  thrown in /var/www/wp-content/themes/Divi/header.php on line 6
+
+2019-10-08T14:14:17+00:00 CRITICAL Uncaught Error: Call to undefined function elegant_description() in /var/www/wp-content/themes/Divi/header.php:6
+Stack trace:
+#0 /var/www/wp-includes/template.php(722): require_once()
+#1 /var/www/wp-includes/template.php(671): load_template('/var/www/wp-con...', true)
+#2 /var/www/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /var/www/wp-content/themes/Divi/page.php(3): get_header()
+#4 /var/www/wp-includes/template-loader.php(78): include('/var/www/wp-con...')
+#5 /var/www/wp-blog-header.php(19): require_once('/var/www/wp-inc...')
+#6 /var/www/index.php(17): require('/var/www/wp-blo...')
+#7 {main}
+  thrown in /var/www/wp-content/themes/Divi/header.php on line 6
+
+2019-10-08T14:14:17+00:00 CRITICAL Uncaught Error: Call to undefined function elegant_description() in /var/www/wp-content/themes/Divi/header.php:6
+Stack trace:
+#0 /var/www/wp-includes/template.php(722): require_once()
+#1 /var/www/wp-includes/template.php(671): load_template('/var/www/wp-con...', true)
+#2 /var/www/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /var/www/wp-content/themes/Divi/page.php(3): get_header()
+#4 /var/www/wp-includes/template-loader.php(78): include('/var/www/wp-con...')
+#5 /var/www/wp-blog-header.php(19): require_once('/var/www/wp-inc...')
+#6 /var/www/index.php(17): require('/var/www/wp-blo...')
+#7 {main}
+  thrown in /var/www/wp-content/themes/Divi/header.php on line 6
+
+2019-10-08T14:14:17+00:00 CRITICAL Uncaught Error: Call to undefined function elegant_description() in /var/www/wp-content/themes/Divi/header.php:6
+Stack trace:
+#0 /var/www/wp-includes/template.php(722): require_once()
+#1 /var/www/wp-includes/template.php(671): load_template('/var/www/wp-con...', true)
+#2 /var/www/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /var/www/wp-content/themes/Divi/page.php(3): get_header()
+#4 /var/www/wp-includes/template-loader.php(78): include('/var/www/wp-con...')
+#5 /var/www/wp-blog-header.php(19): require_once('/var/www/wp-inc...')
+#6 /var/www/index.php(17): require('/var/www/wp-blo...')
+#7 {main}
+  thrown in /var/www/wp-content/themes/Divi/header.php on line 6
+
+2019-10-08T14:14:17+00:00 CRITICAL Uncaught Error: Call to undefined function elegant_description() in /var/www/wp-content/themes/Divi/header.php:6
+Stack trace:
+#0 /var/www/wp-includes/template.php(722): require_once()
+#1 /var/www/wp-includes/template.php(671): load_template('/var/www/wp-con...', true)
+#2 /var/www/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /var/www/wp-content/themes/Divi/page.php(3): get_header()
+#4 /var/www/wp-includes/template-loader.php(78): include('/var/www/wp-con...')
+#5 /var/www/wp-blog-header.php(19): require_once('/var/www/wp-inc...')
+#6 /var/www/index.php(17): require('/var/www/wp-blo...')
+#7 {main}
+  thrown in /var/www/wp-content/themes/Divi/header.php on line 6
+
+2019-10-08T14:14:17+00:00 CRITICAL Uncaught Error: Call to undefined function elegant_description() in /var/www/wp-content/themes/Divi/header.php:6
+Stack trace:
+#0 /var/www/wp-includes/template.php(722): require_once()
+#1 /var/www/wp-includes/template.php(671): load_template('/var/www/wp-con...', true)
+#2 /var/www/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /var/www/wp-content/themes/Divi/page.php(3): get_header()
+#4 /var/www/wp-includes/template-loader.php(78): include('/var/www/wp-con...')
+#5 /var/www/wp-blog-header.php(19): require_once('/var/www/wp-inc...')
+#6 /var/www/index.php(17): require('/var/www/wp-blo...')
+#7 {main}
+  thrown in /var/www/wp-content/themes/Divi/header.php on line 6
+
+2019-10-08T14:14:17+00:00 CRITICAL Uncaught Error: Call to undefined function elegant_description() in /var/www/wp-content/themes/Divi/header.php:6
+Stack trace:
+#0 /var/www/wp-includes/template.php(722): require_once()
+#1 /var/www/wp-includes/template.php(671): load_template('/var/www/wp-con...', true)
+#2 /var/www/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /var/www/wp-content/themes/Divi/page.php(3): get_header()
+#4 /var/www/wp-includes/template-loader.php(78): include('/var/www/wp-con...')
+#5 /var/www/wp-blog-header.php(19): require_once('/var/www/wp-inc...')
+#6 /var/www/index.php(17): require('/var/www/wp-blo...')
+#7 {main}
+  thrown in /var/www/wp-content/themes/Divi/header.php on line 6
+
+2019-10-08T14:14:17+00:00 CRITICAL Uncaught Error: Call to undefined function elegant_description() in /var/www/wp-content/themes/Divi/header.php:6
+Stack trace:
+#0 /var/www/wp-includes/template.php(722): require_once()
+#1 /var/www/wp-includes/template.php(671): load_template('/var/www/wp-con...', true)
+#2 /var/www/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /var/www/wp-content/themes/Divi/page.php(3): get_header()
+#4 /var/www/wp-includes/template-loader.php(78): include('/var/www/wp-con...')
+#5 /var/www/wp-blog-header.php(19): require_once('/var/www/wp-inc...')
+#6 /var/www/index.php(17): require('/var/www/wp-blo...')
+#7 {main}
+  thrown in /var/www/wp-content/themes/Divi/header.php on line 6
+
+2019-10-08T14:14:17+00:00 CRITICAL Uncaught Error: Call to undefined function elegant_description() in /var/www/wp-content/themes/Divi/header.php:6
+Stack trace:
+#0 /var/www/wp-includes/template.php(722): require_once()
+#1 /var/www/wp-includes/template.php(671): load_template('/var/www/wp-con...', true)
+#2 /var/www/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /var/www/wp-content/themes/Divi/page.php(3): get_header()
+#4 /var/www/wp-includes/template-loader.php(78): include('/var/www/wp-con...')
+#5 /var/www/wp-blog-header.php(19): require_once('/var/www/wp-inc...')
+#6 /var/www/index.php(17): require('/var/www/wp-blo...')
+#7 {main}
+  thrown in /var/www/wp-content/themes/Divi/header.php on line 6
+
+2019-10-08T14:14:17+00:00 CRITICAL Uncaught Error: Call to undefined function elegant_description() in /var/www/wp-content/themes/Divi/header.php:6
+Stack trace:
+#0 /var/www/wp-includes/template.php(722): require_once()
+#1 /var/www/wp-includes/template.php(671): load_template('/var/www/wp-con...', true)
+#2 /var/www/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /var/www/wp-content/themes/Divi/page.php(3): get_header()
+#4 /var/www/wp-includes/template-loader.php(78): include('/var/www/wp-con...')
+#5 /var/www/wp-blog-header.php(19): require_once('/var/www/wp-inc...')
+#6 /var/www/index.php(17): require('/var/www/wp-blo...')
+#7 {main}
+  thrown in /var/www/wp-content/themes/Divi/header.php on line 6
+
+2019-10-08T14:14:18+00:00 CRITICAL Uncaught Error: Call to undefined function elegant_description() in /var/www/wp-content/themes/Divi/header.php:6
+Stack trace:
+#0 /var/www/wp-includes/template.php(722): require_once()
+#1 /var/www/wp-includes/template.php(671): load_template('/var/www/wp-con...', true)
+#2 /var/www/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /var/www/wp-content/themes/Divi/page.php(3): get_header()
+#4 /var/www/wp-includes/template-loader.php(78): include('/var/www/wp-con...')
+#5 /var/www/wp-blog-header.php(19): require_once('/var/www/wp-inc...')
+#6 /var/www/index.php(17): require('/var/www/wp-blo...')
+#7 {main}
+  thrown in /var/www/wp-content/themes/Divi/header.php on line 6
+
+2019-10-08T14:14:18+00:00 CRITICAL Uncaught Error: Call to undefined function elegant_description() in /var/www/wp-content/themes/Divi/header.php:6
+Stack trace:
+#0 /var/www/wp-includes/template.php(722): require_once()
+#1 /var/www/wp-includes/template.php(671): load_template('/var/www/wp-con...', true)
+#2 /var/www/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /var/www/wp-content/themes/Divi/page.php(3): get_header()
+#4 /var/www/wp-includes/template-loader.php(78): include('/var/www/wp-con...')
+#5 /var/www/wp-blog-header.php(19): require_once('/var/www/wp-inc...')
+#6 /var/www/index.php(17): require('/var/www/wp-blo...')
+#7 {main}
+  thrown in /var/www/wp-content/themes/Divi/header.php on line 6
+
+2019-10-08T14:14:19+00:00 CRITICAL Uncaught Error: Call to undefined function elegant_description() in /var/www/wp-content/themes/Divi/header.php:6
+Stack trace:
+#0 /var/www/wp-includes/template.php(722): require_once()
+#1 /var/www/wp-includes/template.php(671): load_template('/var/www/wp-con...', true)
+#2 /var/www/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /var/www/wp-content/themes/Divi/page.php(3): get_header()
+#4 /var/www/wp-includes/template-loader.php(78): include('/var/www/wp-con...')
+#5 /var/www/wp-blog-header.php(19): require_once('/var/www/wp-inc...')
+#6 /var/www/index.php(17): require('/var/www/wp-blo...')
+#7 {main}
+  thrown in /var/www/wp-content/themes/Divi/header.php on line 6
+
+2019-10-08T14:14:30+00:00 CRITICAL Uncaught Error: Call to undefined function elegant_description() in /var/www/wp-content/themes/Divi/header.php:6
+Stack trace:
+#0 /var/www/wp-includes/template.php(722): require_once()
+#1 /var/www/wp-includes/template.php(671): load_template('/var/www/wp-con...', true)
+#2 /var/www/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /var/www/wp-content/themes/Divi/page.php(3): get_header()
+#4 /var/www/wp-includes/template-loader.php(78): include('/var/www/wp-con...')
+#5 /var/www/wp-blog-header.php(19): require_once('/var/www/wp-inc...')
+#6 /var/www/index.php(17): require('/var/www/wp-blo...')
+#7 {main}
+  thrown in /var/www/wp-content/themes/Divi/header.php on line 6
+
+2019-10-08T14:14:30+00:00 CRITICAL Uncaught Error: Call to undefined function elegant_description() in /var/www/wp-content/themes/Divi/header.php:6
+Stack trace:
+#0 /var/www/wp-includes/template.php(722): require_once()
+#1 /var/www/wp-includes/template.php(671): load_template('/var/www/wp-con...', true)
+#2 /var/www/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /var/www/wp-content/themes/Divi/page.php(3): get_header()
+#4 /var/www/wp-includes/template-loader.php(78): include('/var/www/wp-con...')
+#5 /var/www/wp-blog-header.php(19): require_once('/var/www/wp-inc...')
+#6 /var/www/index.php(17): require('/var/www/wp-blo...')
+#7 {main}
+  thrown in /var/www/wp-content/themes/Divi/header.php on line 6
+
+2019-10-08T14:14:31+00:00 CRITICAL Uncaught Error: Call to undefined function elegant_description() in /var/www/wp-content/themes/Divi/header.php:6
+Stack trace:
+#0 /var/www/wp-includes/template.php(722): require_once()
+#1 /var/www/wp-includes/template.php(671): load_template('/var/www/wp-con...', true)
+#2 /var/www/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /var/www/wp-content/themes/Divi/page.php(3): get_header()
+#4 /var/www/wp-includes/template-loader.php(78): include('/var/www/wp-con...')
+#5 /var/www/wp-blog-header.php(19): require_once('/var/www/wp-inc...')
+#6 /var/www/index.php(17): require('/var/www/wp-blo...')
+#7 {main}
+  thrown in /var/www/wp-content/themes/Divi/header.php on line 6
+
+2019-10-08T14:14:31+00:00 CRITICAL Uncaught Error: Call to undefined function elegant_description() in /var/www/wp-content/themes/Divi/header.php:6
+Stack trace:
+#0 /var/www/wp-includes/template.php(722): require_once()
+#1 /var/www/wp-includes/template.php(671): load_template('/var/www/wp-con...', true)
+#2 /var/www/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /var/www/wp-content/themes/Divi/page.php(3): get_header()
+#4 /var/www/wp-includes/template-loader.php(78): include('/var/www/wp-con...')
+#5 /var/www/wp-blog-header.php(19): require_once('/var/www/wp-inc...')
+#6 /var/www/index.php(17): require('/var/www/wp-blo...')
+#7 {main}
+  thrown in /var/www/wp-content/themes/Divi/header.php on line 6
+
+2019-10-08T14:14:31+00:00 CRITICAL Uncaught Error: Call to undefined function elegant_description() in /var/www/wp-content/themes/Divi/header.php:6
+Stack trace:
+#0 /var/www/wp-includes/template.php(722): require_once()
+#1 /var/www/wp-includes/template.php(671): load_template('/var/www/wp-con...', true)
+#2 /var/www/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /var/www/wp-content/themes/Divi/page.php(3): get_header()
+#4 /var/www/wp-includes/template-loader.php(78): include('/var/www/wp-con...')
+#5 /var/www/wp-blog-header.php(19): require_once('/var/www/wp-inc...')
+#6 /var/www/index.php(17): require('/var/www/wp-blo...')
+#7 {main}
+  thrown in /var/www/wp-content/themes/Divi/header.php on line 6
+
+2019-10-08T14:14:31+00:00 CRITICAL Uncaught Error: Call to undefined function elegant_description() in /var/www/wp-content/themes/Divi/header.php:6
+Stack trace:
+#0 /var/www/wp-includes/template.php(722): require_once()
+#1 /var/www/wp-includes/template.php(671): load_template('/var/www/wp-con...', true)
+#2 /var/www/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /var/www/wp-content/themes/Divi/page.php(3): get_header()
+#4 /var/www/wp-includes/template-loader.php(78): include('/var/www/wp-con...')
+#5 /var/www/wp-blog-header.php(19): require_once('/var/www/wp-inc...')
+#6 /var/www/index.php(17): require('/var/www/wp-blo...')
+#7 {main}
+  thrown in /var/www/wp-content/themes/Divi/header.php on line 6
+
+2019-10-08T14:14:31+00:00 CRITICAL Uncaught Error: Call to undefined function elegant_description() in /var/www/wp-content/themes/Divi/header.php:6
+Stack trace:
+#0 /var/www/wp-includes/template.php(722): require_once()
+#1 /var/www/wp-includes/template.php(671): load_template('/var/www/wp-con...', true)
+#2 /var/www/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /var/www/wp-content/themes/Divi/page.php(3): get_header()
+#4 /var/www/wp-includes/template-loader.php(78): include('/var/www/wp-con...')
+#5 /var/www/wp-blog-header.php(19): require_once('/var/www/wp-inc...')
+#6 /var/www/index.php(17): require('/var/www/wp-blo...')
+#7 {main}
+  thrown in /var/www/wp-content/themes/Divi/header.php on line 6
+
+2019-10-08T14:14:31+00:00 CRITICAL Uncaught Error: Call to undefined function elegant_description() in /var/www/wp-content/themes/Divi/header.php:6
+Stack trace:
+#0 /var/www/wp-includes/template.php(722): require_once()
+#1 /var/www/wp-includes/template.php(671): load_template('/var/www/wp-con...', true)
+#2 /var/www/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /var/www/wp-content/themes/Divi/page.php(3): get_header()
+#4 /var/www/wp-includes/template-loader.php(78): include('/var/www/wp-con...')
+#5 /var/www/wp-blog-header.php(19): require_once('/var/www/wp-inc...')
+#6 /var/www/index.php(17): require('/var/www/wp-blo...')
+#7 {main}
+  thrown in /var/www/wp-content/themes/Divi/header.php on line 6
+
+2019-10-08T14:14:31+00:00 CRITICAL Uncaught Error: Call to undefined function elegant_description() in /var/www/wp-content/themes/Divi/header.php:6
+Stack trace:
+#0 /var/www/wp-includes/template.php(722): require_once()
+#1 /var/www/wp-includes/template.php(671): load_template('/var/www/wp-con...', true)
+#2 /var/www/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /var/www/wp-content/themes/Divi/page.php(3): get_header()
+#4 /var/www/wp-includes/template-loader.php(78): include('/var/www/wp-con...')
+#5 /var/www/wp-blog-header.php(19): require_once('/var/www/wp-inc...')
+#6 /var/www/index.php(17): require('/var/www/wp-blo...')
+#7 {main}
+  thrown in /var/www/wp-content/themes/Divi/header.php on line 6
+
+2019-10-08T14:14:31+00:00 CRITICAL Uncaught Error: Call to undefined function elegant_description() in /var/www/wp-content/themes/Divi/header.php:6
+Stack trace:
+#0 /var/www/wp-includes/template.php(722): require_once()
+#1 /var/www/wp-includes/template.php(671): load_template('/var/www/wp-con...', true)
+#2 /var/www/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /var/www/wp-content/themes/Divi/page.php(3): get_header()
+#4 /var/www/wp-includes/template-loader.php(78): include('/var/www/wp-con...')
+#5 /var/www/wp-blog-header.php(19): require_once('/var/www/wp-inc...')
+#6 /var/www/index.php(17): require('/var/www/wp-blo...')
+#7 {main}
+  thrown in /var/www/wp-content/themes/Divi/header.php on line 6
+
+2019-10-08T14:14:31+00:00 CRITICAL Uncaught Error: Call to undefined function elegant_description() in /var/www/wp-content/themes/Divi/header.php:6
+Stack trace:
+#0 /var/www/wp-includes/template.php(722): require_once()
+#1 /var/www/wp-includes/template.php(671): load_template('/var/www/wp-con...', true)
+#2 /var/www/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /var/www/wp-content/themes/Divi/page.php(3): get_header()
+#4 /var/www/wp-includes/template-loader.php(78): include('/var/www/wp-con...')
+#5 /var/www/wp-blog-header.php(19): require_once('/var/www/wp-inc...')
+#6 /var/www/index.php(17): require('/var/www/wp-blo...')
+#7 {main}
+  thrown in /var/www/wp-content/themes/Divi/header.php on line 6
+
+2019-10-08T14:14:31+00:00 CRITICAL Uncaught Error: Call to undefined function elegant_description() in /var/www/wp-content/themes/Divi/header.php:6
+Stack trace:
+#0 /var/www/wp-includes/template.php(722): require_once()
+#1 /var/www/wp-includes/template.php(671): load_template('/var/www/wp-con...', true)
+#2 /var/www/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /var/www/wp-content/themes/Divi/page.php(3): get_header()
+#4 /var/www/wp-includes/template-loader.php(78): include('/var/www/wp-con...')
+#5 /var/www/wp-blog-header.php(19): require_once('/var/www/wp-inc...')
+#6 /var/www/index.php(17): require('/var/www/wp-blo...')
+#7 {main}
+  thrown in /var/www/wp-content/themes/Divi/header.php on line 6
+
+2019-10-08T14:14:31+00:00 CRITICAL Uncaught Error: Call to undefined function elegant_description() in /var/www/wp-content/themes/Divi/header.php:6
+Stack trace:
+#0 /var/www/wp-includes/template.php(722): require_once()
+#1 /var/www/wp-includes/template.php(671): load_template('/var/www/wp-con...', true)
+#2 /var/www/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /var/www/wp-content/themes/Divi/page.php(3): get_header()
+#4 /var/www/wp-includes/template-loader.php(78): include('/var/www/wp-con...')
+#5 /var/www/wp-blog-header.php(19): require_once('/var/www/wp-inc...')
+#6 /var/www/index.php(17): require('/var/www/wp-blo...')
+#7 {main}
+  thrown in /var/www/wp-content/themes/Divi/header.php on line 6
+
+2019-10-08T14:14:32+00:00 CRITICAL Uncaught Error: Call to undefined function elegant_description() in /var/www/wp-content/themes/Divi/header.php:6
+Stack trace:
+#0 /var/www/wp-includes/template.php(722): require_once()
+#1 /var/www/wp-includes/template.php(671): load_template('/var/www/wp-con...', true)
+#2 /var/www/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /var/www/wp-content/themes/Divi/page.php(3): get_header()
+#4 /var/www/wp-includes/template-loader.php(78): include('/var/www/wp-con...')
+#5 /var/www/wp-blog-header.php(19): require_once('/var/www/wp-inc...')
+#6 /var/www/index.php(17): require('/var/www/wp-blo...')
+#7 {main}
+  thrown in /var/www/wp-content/themes/Divi/header.php on line 6
+
+2019-10-08T14:14:32+00:00 CRITICAL Uncaught Error: Call to undefined function elegant_description() in /var/www/wp-content/themes/Divi/header.php:6
+Stack trace:
+#0 /var/www/wp-includes/template.php(722): require_once()
+#1 /var/www/wp-includes/template.php(671): load_template('/var/www/wp-con...', true)
+#2 /var/www/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /var/www/wp-content/themes/Divi/page.php(3): get_header()
+#4 /var/www/wp-includes/template-loader.php(78): include('/var/www/wp-con...')
+#5 /var/www/wp-blog-header.php(19): require_once('/var/www/wp-inc...')
+#6 /var/www/index.php(17): require('/var/www/wp-blo...')
+#7 {main}
+  thrown in /var/www/wp-content/themes/Divi/header.php on line 6
+
+2019-10-08T14:14:32+00:00 CRITICAL Uncaught Error: Call to undefined function elegant_description() in /var/www/wp-content/themes/Divi/header.php:6
+Stack trace:
+#0 /var/www/wp-includes/template.php(722): require_once()
+#1 /var/www/wp-includes/template.php(671): load_template('/var/www/wp-con...', true)
+#2 /var/www/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /var/www/wp-content/themes/Divi/page.php(3): get_header()
+#4 /var/www/wp-includes/template-loader.php(78): include('/var/www/wp-con...')
+#5 /var/www/wp-blog-header.php(19): require_once('/var/www/wp-inc...')
+#6 /var/www/index.php(17): require('/var/www/wp-blo...')
+#7 {main}
+  thrown in /var/www/wp-content/themes/Divi/header.php on line 6
+
+2019-10-08T14:14:32+00:00 CRITICAL Uncaught Error: Call to undefined function elegant_description() in /var/www/wp-content/themes/Divi/header.php:6
+Stack trace:
+#0 /var/www/wp-includes/template.php(722): require_once()
+#1 /var/www/wp-includes/template.php(671): load_template('/var/www/wp-con...', true)
+#2 /var/www/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /var/www/wp-content/themes/Divi/page.php(3): get_header()
+#4 /var/www/wp-includes/template-loader.php(78): include('/var/www/wp-con...')
+#5 /var/www/wp-blog-header.php(19): require_once('/var/www/wp-inc...')
+#6 /var/www/index.php(17): require('/var/www/wp-blo...')
+#7 {main}
+  thrown in /var/www/wp-content/themes/Divi/header.php on line 6
+
+2019-10-08T14:14:32+00:00 CRITICAL Uncaught Error: Call to undefined function elegant_description() in /var/www/wp-content/themes/Divi/header.php:6
+Stack trace:
+#0 /var/www/wp-includes/template.php(722): require_once()
+#1 /var/www/wp-includes/template.php(671): load_template('/var/www/wp-con...', true)
+#2 /var/www/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /var/www/wp-content/themes/Divi/page.php(3): get_header()
+#4 /var/www/wp-includes/template-loader.php(78): include('/var/www/wp-con...')
+#5 /var/www/wp-blog-header.php(19): require_once('/var/www/wp-inc...')
+#6 /var/www/index.php(17): require('/var/www/wp-blo...')
+#7 {main}
+  thrown in /var/www/wp-content/themes/Divi/header.php on line 6
+
+2019-10-08T14:14:33+00:00 CRITICAL Uncaught Error: Call to undefined function elegant_description() in /var/www/wp-content/themes/Divi/header.php:6
+Stack trace:
+#0 /var/www/wp-includes/template.php(722): require_once()
+#1 /var/www/wp-includes/template.php(671): load_template('/var/www/wp-con...', true)
+#2 /var/www/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /var/www/wp-content/themes/Divi/page.php(3): get_header()
+#4 /var/www/wp-includes/template-loader.php(78): include('/var/www/wp-con...')
+#5 /var/www/wp-blog-header.php(19): require_once('/var/www/wp-inc...')
+#6 /var/www/index.php(17): require('/var/www/wp-blo...')
+#7 {main}
+  thrown in /var/www/wp-content/themes/Divi/header.php on line 6
+
+2019-10-08T14:14:33+00:00 CRITICAL Uncaught Error: Call to undefined function elegant_description() in /var/www/wp-content/themes/Divi/header.php:6
+Stack trace:
+#0 /var/www/wp-includes/template.php(722): require_once()
+#1 /var/www/wp-includes/template.php(671): load_template('/var/www/wp-con...', true)
+#2 /var/www/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /var/www/wp-content/themes/Divi/page.php(3): get_header()
+#4 /var/www/wp-includes/template-loader.php(78): include('/var/www/wp-con...')
+#5 /var/www/wp-blog-header.php(19): require_once('/var/www/wp-inc...')
+#6 /var/www/index.php(17): require('/var/www/wp-blo...')
+#7 {main}
+  thrown in /var/www/wp-content/themes/Divi/header.php on line 6
+
+2019-10-08T14:14:33+00:00 CRITICAL Uncaught Error: Call to undefined function elegant_description() in /var/www/wp-content/themes/Divi/header.php:6
+Stack trace:
+#0 /var/www/wp-includes/template.php(722): require_once()
+#1 /var/www/wp-includes/template.php(671): load_template('/var/www/wp-con...', true)
+#2 /var/www/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /var/www/wp-content/themes/Divi/page.php(3): get_header()
+#4 /var/www/wp-includes/template-loader.php(78): include('/var/www/wp-con...')
+#5 /var/www/wp-blog-header.php(19): require_once('/var/www/wp-inc...')
+#6 /var/www/index.php(17): require('/var/www/wp-blo...')
+#7 {main}
+  thrown in /var/www/wp-content/themes/Divi/header.php on line 6
+
+2019-10-08T14:14:33+00:00 CRITICAL Uncaught Error: Call to undefined function elegant_description() in /var/www/wp-content/themes/Divi/header.php:6
+Stack trace:
+#0 /var/www/wp-includes/template.php(722): require_once()
+#1 /var/www/wp-includes/template.php(671): load_template('/var/www/wp-con...', true)
+#2 /var/www/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /var/www/wp-content/themes/Divi/page.php(3): get_header()
+#4 /var/www/wp-includes/template-loader.php(78): include('/var/www/wp-con...')
+#5 /var/www/wp-blog-header.php(19): require_once('/var/www/wp-inc...')
+#6 /var/www/index.php(17): require('/var/www/wp-blo...')
+#7 {main}
+  thrown in /var/www/wp-content/themes/Divi/header.php on line 6
+
+2019-10-08T14:14:34+00:00 CRITICAL Uncaught Error: Call to undefined function elegant_description() in /var/www/wp-content/themes/Divi/header.php:6
+Stack trace:
+#0 /var/www/wp-includes/template.php(722): require_once()
+#1 /var/www/wp-includes/template.php(671): load_template('/var/www/wp-con...', true)
+#2 /var/www/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /var/www/wp-content/themes/Divi/page.php(3): get_header()
+#4 /var/www/wp-includes/template-loader.php(78): include('/var/www/wp-con...')
+#5 /var/www/wp-blog-header.php(19): require_once('/var/www/wp-inc...')
+#6 /var/www/index.php(17): require('/var/www/wp-blo...')
+#7 {main}
+  thrown in /var/www/wp-content/themes/Divi/header.php on line 6
+

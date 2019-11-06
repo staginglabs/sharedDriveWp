@@ -1,0 +1,72 @@
+2019-09-18T08:01:32+00:00 CRITICAL syntax error, unexpected end of file in /var/www/wp-content/themes/Divi/functions.php on line 4556
+
+2019-09-18T11:29:53+00:00 CRITICAL Uncaught Error: Cannot use object of type WC_Order as array in /var/www/wp-content/themes/Divi/functions.php:7453
+Stack trace:
+#0 /var/www/wp-includes/class-wp-hook.php(288): save_custom_meta_data(598)
+#1 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/wp-includes/post.php(3951): do_action('save_post', 598, Object(WP_Post), true)
+#4 /var/www/wp-includes/post.php(4028): wp_insert_post(Array, false)
+#5 /var/www/wp-admin/includes/post.php(405): wp_update_post(Array)
+#6 /var/www/wp-admin/post.php(218): edit_post()
+#7 {main}
+  thrown in /var/www/wp-content/themes/Divi/functions.php on line 7453
+
+2019-09-18T11:30:11+00:00 CRITICAL Uncaught Error: Cannot use object of type WC_Order as array in /var/www/wp-content/themes/Divi/functions.php:7453
+Stack trace:
+#0 /var/www/wp-includes/class-wp-hook.php(288): save_custom_meta_data(598)
+#1 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/wp-includes/post.php(3951): do_action('save_post', 598, Object(WP_Post), true)
+#4 /var/www/wp-includes/post.php(4028): wp_insert_post(Array, false)
+#5 /var/www/wp-admin/includes/post.php(405): wp_update_post(Array)
+#6 /var/www/wp-admin/post.php(218): edit_post()
+#7 {main}
+  thrown in /var/www/wp-content/themes/Divi/functions.php on line 7453
+
+2019-09-18T11:30:47+00:00 CRITICAL Uncaught Error: Cannot use object of type WC_Order as array in /var/www/wp-content/themes/Divi/functions.php:7453
+Stack trace:
+#0 /var/www/wp-includes/class-wp-hook.php(288): save_custom_meta_data(598)
+#1 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/wp-includes/post.php(3951): do_action('save_post', 598, Object(WP_Post), true)
+#4 /var/www/wp-includes/post.php(4028): wp_insert_post(Array, false)
+#5 /var/www/wp-admin/includes/post.php(405): wp_update_post(Array)
+#6 /var/www/wp-admin/post.php(218): edit_post()
+#7 {main}
+  thrown in /var/www/wp-content/themes/Divi/functions.php on line 7453
+
+2019-09-18T12:06:53+00:00 CRITICAL syntax error, unexpected 'is_rtl' (T_STRING) in /var/www/wp-content/themes/Divi/functions.php on line 7462
+
+2019-09-18T12:06:56+00:00 CRITICAL syntax error, unexpected 'is_rtl' (T_STRING) in /var/www/wp-content/themes/Divi/functions.php on line 7462
+
+2019-09-18T12:08:10+00:00 CRITICAL syntax error, unexpected 'is_rtl' (T_STRING) in /var/www/wp-content/themes/Divi/functions.php on line 7462
+
+2019-09-18T12:22:37+00:00 CRITICAL syntax error, unexpected '$mail_body' (T_VARIABLE) in /var/www/wp-content/themes/Divi/functions.php on line 7461
+
+2019-09-18T12:22:37+00:00 CRITICAL syntax error, unexpected '$mail_body' (T_VARIABLE) in /var/www/wp-content/themes/Divi/functions.php on line 7461
+
+2019-09-18T12:22:47+00:00 CRITICAL syntax error, unexpected '$mail_body' (T_VARIABLE) in /var/www/wp-content/themes/Divi/functions.php on line 7461
+
+2019-09-18T12:22:53+00:00 CRITICAL syntax error, unexpected '$mail_body' (T_VARIABLE) in /var/www/wp-content/themes/Divi/functions.php on line 7461
+
+2019-09-18T12:22:55+00:00 CRITICAL syntax error, unexpected '$mail_body' (T_VARIABLE) in /var/www/wp-content/themes/Divi/functions.php on line 7461
+
+2019-09-18T12:23:09+00:00 CRITICAL syntax error, unexpected '$mail_body' (T_VARIABLE) in /var/www/wp-content/themes/Divi/functions.php on line 7461
+
+2019-09-18T12:23:36+00:00 CRITICAL syntax error, unexpected '$mail_body' (T_VARIABLE) in /var/www/wp-content/themes/Divi/functions.php on line 7461
+
+2019-09-18T12:23:50+00:00 CRITICAL syntax error, unexpected '$mail_body' (T_VARIABLE) in /var/www/wp-content/themes/Divi/functions.php on line 7461
+
+2019-09-18T12:23:59+00:00 CRITICAL syntax error, unexpected '$mail_body' (T_VARIABLE) in /var/www/wp-content/themes/Divi/functions.php on line 7461
+
+2019-09-18T12:24:00+00:00 CRITICAL syntax error, unexpected '$mail_body' (T_VARIABLE) in /var/www/wp-content/themes/Divi/functions.php on line 7461
+
+2019-09-18T12:24:19+00:00 CRITICAL syntax error, unexpected '$mail_body' (T_VARIABLE) in /var/www/wp-content/themes/Divi/functions.php on line 7461
+
+2019-09-18T12:25:11+00:00 CRITICAL syntax error, unexpected '$mail_body' (T_VARIABLE) in /var/www/wp-content/themes/Divi/functions.php on line 7461
+
+2019-09-18T12:28:46+00:00 CRITICAL syntax error, unexpected '$mail_body' (T_VARIABLE) in /var/www/wp-content/themes/Divi/functions.php on line 7461
+
+2019-09-18T12:29:31+00:00 CRITICAL syntax error, unexpected '$mail_body' (T_VARIABLE) in /var/www/wp-content/themes/Divi/functions.php on line 7461
+

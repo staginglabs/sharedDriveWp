@@ -1,0 +1,12 @@
+2019-10-04T10:49:43+00:00 CRITICAL Uncaught Error: Call to a member function get_billing_email() on null in /var/www/wp-content/themes/Divi/functions.php:7361
+Stack trace:
+#0 /var/www/wp-includes/class-wp-hook.php(286): view_order_and_thankyou_page(4526)
+#1 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/wp-content/themes/Divi/woocommerce/myaccount/view-order.php(57): do_action('woocommerce_vie...', 4526)
+#4 /var/www/wp-content/plugins/woocommerce/includes/wc-core-functions.php(249): include('/var/www/wp-con...')
+#5 /var/www/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#6 /var/www/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3080): WC_Shortcode_My_Account::view_order(4526)
+#7 /var/www/wp-includes/class-wp-hook.php(286): woocommerce_account_view_order('4526')
+#8 /var/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_fil in /var/www/wp-content/themes/Divi/functions.php on line 7361
+

@@ -44,6 +44,27 @@ register_rest_route(
     	)
   );
 
+
+register_rest_route(
+    'drive', '/getUserInfo/',
+	    array(
+    	  'methods'  => 'POST',
+      	  'callback' => 'getUserInfo',
+    	)
+  );
+
+
+register_rest_route(
+    'drive', '/getUserOrders/',
+	    array(
+    	  'methods'  => 'POST',
+      	  'callback' => 'getUserOrders',
+    	)
+  );
+
+
+
+
 }
 
 
@@ -76,7 +97,6 @@ function loggout($request){
          	
          	}else{
 	         		$responsecreds['status']="error";
-	         		$responsecreds['data']=[];
 	         		$responsecreds['message']="Invalid Token Please try again";
 	         		return $responsecreds;	         		
 	         	}  
@@ -84,7 +104,6 @@ function loggout($request){
 
 	    }else{
 	         		$responsecreds['status']="error";
-	         		$responsecreds['data']=[];
 	         		$responsecreds['message']="Invalid Token Please try again";
 	         		return $responsecreds;	         		
 	      	}         		
@@ -107,19 +126,25 @@ function login($request){
           $user = wp_signon( $creds, false );
     ## Invalid User 
     if ( is_wp_error($user) ){
-    	$responsecreds['status']="error";
-         		$responsecreds['data']=[];
+    			$responsecreds['status']="error";
          		$responsecreds['message']="Invalid Token Please try again";
          		return $responsecreds;
    	}else{
         ## Set Token If user is valid
-     		$token = $creds['user_login'].time();
+     		$token = getIndentificationString().$creds['user_login'].time();     		
      		$user_endoredata = json_decode(json_encode($user));
      		$user_id = $user_endoredata->data->ID;
-     		$users=array();
-     		$users['status']="success";
+     		$responseUser=get_user_meta($user->data->ID);
+     		         		
      		update_user_meta( $user_id, '__auth_token_for_shared_drive__', $token);
-     		$responseUser=get_user_meta($users[0]->ID);
+     		update_user_meta( $user_id, '__auth_token_date_and_time_for_shared_drive__', time());
+     		$responseUser=array();
+     		$responseUser['user_nicename']=$user->data->user_nicename;
+     		$responseUser['user_email']=$user->data->user_email;
+     		$responseUser['display_name']=$user->data->display_name;
+     		$responseUser['first_name']=$user->data->first_name;
+     		$responseUser['last_name']=$user->data->last_name;
+     		
      		$responsecreds['status']="success";
          	$responsecreds['data']=$responseUser;
          	$responsecreds['token']=$token;
@@ -148,16 +173,24 @@ function verifyToken($request){
 					    'meta_compare' => '=',
 		));
 
-         	if(!empty($users)){
-         		$responseUser=get_user_meta($users[0]->ID);
-         		$responsecreds['status']="success";
-         		$responsecreds['data']=$responseUser;
+         	if(!empty($users)){         		
+
+         			$user=get_user_meta($users[0]->data->ID);
+         			$responseUser=array();
+		     		$responseUser['user_nicename']=$user['nickname'][0];
+		     		$responseUser['user_email']=$user['user_email'][0];
+		     		$responseUser['display_name']=$user['display_name'][0];
+		     		$responseUser['first_name']=$user['first_name'][0];
+		     		$responseUser['last_name']=$user['last_name'][0];
+		     		$responseUser['token']=$request["token"];
+
+		     		$responsecreds['status']="success";
+		     		$responsecreds['data']=$responseUser;
          		return $responsecreds;
 
          		
          	}else{
          		$responsecreds['status']="error";
-         		$responsecreds['data']=[];
          		$responsecreds['message']="Invalid Token Please try again";
          		return $responsecreds;
          		
@@ -171,16 +204,151 @@ function verifyToken($request){
 }
 
 
+
+
+ /**
+     * 
+     * @param type $request
+     *  Checking Login getUserInfo 
+*/
+function getUserInfo($request){
+          $responsecreds = array();
+          header('Access-Control-Allow-Origin: *');
+         
+    	## Verify Token
+         if(!empty($request["token"]) && isset($request["token"]) ){
+         	$users = get_users(array(
+					    'meta_key'     => '__auth_token_for_shared_drive__',
+					    'meta_value'   => $request["token"],
+					    'meta_compare' => '=',
+		));
+
+         	if(!empty($users)){
+         		$responseUser=get_user_meta($users[0]->ID);
+         		$responsecreds['status']="success";
+         		$responsecreds['data']=$responseUser;
+         		return $responsecreds;
+
+         		
+         	}else{
+         		$responsecreds['status']="error";
+         		$responsecreds['message']="Invalid Token Please try again";
+         		return $responsecreds;
+         		
+         	}
+         	
+	
+         }else{
+         		$responsecreds['status']="error";
+         		$responsecreds['message']="Invalid Token Please try again";
+         		return $responsecreds;
+         		
+         	}
+         
+  
+ 	 
+}
+
+
+
  /**
      * 
      * @param type $request
      *  Change the password of loggedin user using restapi
 */
 function changePassword($request){
-          $creds = array();
-          $creds['email_id'] = $request["email_id"];
-          $creds['previous_password'] =  $request["previous_password"];
-          $creds['new_password'] =  $request["new_password"];
-          $creds['auth_token'] =  $request["auth_token"];
+
+	## Verify Token
+         if(!empty($request["token"]) && isset($request["token"]) ){
+         	$users = get_users(array(
+					    'meta_key'     => '__auth_token_for_shared_drive__',
+					    'meta_value'   => $request["token"],
+					    'meta_compare' => '=',
+		));
+
+         	if(!empty($users)){
+		          $creds = array();
+		          $new_password=$request["newpassword"];
+		          $conform_password=$request["conform_password"];
+		     	 wp_set_password( $new_password, $users[0]->ID );
+
+
+
+		      }else{
+         		$responsecreds['status']="error";
+         		$responsecreds['message']="Invalid Token Please try again";
+         		return $responsecreds;
+         		
+         	}
+
+
+    }else{
+         		$responsecreds['status']="error";
+         		$responsecreds['message']="Invalid Token Please try again";
+         		return $responsecreds;
+         		
+         	}
    
+}
+
+
+
+
+/**
+     * 
+     * @param type $request
+     *  Get All Order of user By token
+*/
+function getUserOrders($request){
+          $responsecreds = array();
+          header('Access-Control-Allow-Origin: *');
+         
+    	## Verify Token
+         if(!empty($request["token"]) && isset($request["token"]) ){
+         	$users = get_users(array(
+					    'meta_key'     => '__auth_token_for_shared_drive__',
+					    'meta_value'   => $request["token"],
+					    'meta_compare' => '=',
+		));
+
+         	if(!empty($users)){
+         		$responseUser=get_user_meta($users[0]->ID);
+         		$customer_orders = get_posts( array(
+				    'numberposts' => -1,
+				    'meta_key'    => '_customer_user',
+				    'meta_value'  => $users[0]->ID,
+				    'post_type'   => wc_get_order_types(),
+				    
+				) );
+         		echo "<pre>";print_r($customer_orders);die;
+
+         		$responsecreds['status']="success";
+         		$responsecreds['data']=$responseUser;
+         		return $responsecreds;
+
+         		
+         	}else{
+         		$responsecreds['status']="error";
+         		$responsecreds['message']="Invalid Token Please try again";
+         		return $responsecreds;
+         		
+         	}
+         	
+	
+         }
+         
+  
+ 	 
+}
+
+
+
+function getIndentificationString($length = 50) {
+    $base64Chars = 'Aqrstuvwadfxyz0%^1234asf56789abcde&^fghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ+/';
+    $result = '';
+    for ($i = 0; $i < $length; ++$i) {
+        $result .= $base64Chars[mt_rand(0, strlen($base64Chars) - 1)];
+    }
+
+    return $result;
 }

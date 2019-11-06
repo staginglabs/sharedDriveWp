@@ -4,7 +4,7 @@ get_header();
 
 ?>
 
-<div id="main-content">
+<div id="main-content" >
 
 <?php while ( have_posts() ) : the_post(); ?>
 
