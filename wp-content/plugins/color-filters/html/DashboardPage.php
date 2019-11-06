@@ -118,7 +118,7 @@ if ($Ask_Review_Date == "") {$Ask_Review_Date = get_option("EWD_UWCF_Install_Tim
 				<div class="ewd-uwcf-dashboard-new-widget-box-top">
 					<div class="ewd-uwcf-dashboard-guarantee">
 						<div class="ewd-uwcf-dashboard-guarantee-title">14-Day 100% Money-Back Guarantee</div>
-						<div class="ewd-uwcf-dashboard-guarantee-text">If you're not 100% satisfied with the premium version of our plugin - no problem. You have 14 days to receive a FULL REFUND. We're certain you won't need it, though. Lorem ipsum dolor sitamet, consectetuer adipiscing elit.</div>
+						<div class="ewd-uwcf-dashboard-guarantee-text">If you're not 100% satisfied with the premium version of our plugin - no problem. You have 14 days to receive a FULL REFUND. We're certain you won't need it, though.</div>
 					</div>
 				</div>
 			</div>

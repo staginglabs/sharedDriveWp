@@ -7,7 +7,7 @@ Author: Etoile Web Design
 Author URI: https://www.etoilewebdesign.com
 Terms and Conditions: http://www.etoilewebdesign.com/plugin-terms-and-conditions/
 Text Domain: color-filters
-Version: 2.1.9
+Version: 2.1.10
 */
 
 define( 'CF_VERSION', '2.1.0a' );

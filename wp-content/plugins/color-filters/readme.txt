@@ -160,6 +160,9 @@ In the "Basic" area of the "Options" tab in our WooCommerce filters plugin, ther
 7. Adding color filter to a WooCommerce product
 
 == Changelog ==
+= 2.1.10 =
+- Removing placeholder text from the admin
+
 = 2.1.9 =
 - Fixing issue where the min_rating and max_rating strings were showing in the address bar even if the ratings filters wasn't enabled.
 

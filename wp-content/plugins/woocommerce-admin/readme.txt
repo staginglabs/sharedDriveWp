@@ -2,7 +2,7 @@
 Contributors: automattic
 Tags: ecommerce, e-commerce, store, sales, reports, analytics, dashboard, activity, notices, insights, stats, woo commerce, woocommerce
 Requires at least: 5.2.0
-Tested up to: 5.2.1
+Tested up to: 5.2.4
 Requires PHP: 5.6.20
 Stable tag: 1.0.0
 License: GPLv3
@@ -70,6 +70,62 @@ Release and roadmap notes are available on the [WooCommerce Developers Blog](htt
 3. Analytics
 
 == Changelog ==
+
+= 0.21.0 2019-10-30 =
+
+- Fix: report export format when generated server-side. #2987 (Analytics, Packages)
+- Tweak: automatically update DB version during plugin updates. #3113
+- Tweak: add visual feedback for Inbox Note Actions #3039 (Activity Panel, Build, Inbox)
+- Fix: Address discrepancies in Revenue totals between Analytics screens. #3095 (Analytics)
+- Tweak: track inbox note views. #3096 (Activity Panel, Build, Inbox)
+- Dev: Fix asset image URL and business extension images #3062
+- Dev: Fix broken plugin builds by adding missing feature flag check #3053 (Build)
+- Enhancement: add management link to Reviews panel. #3011 (Activity Panel)
+- Fix: Error in category comparison chart. #3027 (Analytics, REST API)
+- Dev: Add the ability to create custom plugin builds #3044 (Build)
+- Fix: create table error during import. #3022 (Analytics, Build)
+- Tweak: Moved WC-Admin specific actions from TableCard to ReportTable. #2900 (Build, Components, Packages)
+
+= 0.20.1 2019-09-24 =
+
+- Fix: use category lookup id instead of term taxonomy id (#3027)
+- Fix: Update order stats table status index length. (#3022)
+
+= 0.20.0 2019-09-24 =
+
+- Dev: Fix issue #2992 (order number in orders panel) #2994
+- Dev: Replace lodash isNaN() with native Number.isNaN() #2998 (Build, Packages)
+- Enhancement: add option to email a download link when exporting reports. #2899 (Analytics, REST API)
+- Dev: Ignore filename rules for PSR-4 classes. #2967 (Build)
+- Fix: Catch notices that are hooked earlier than priority 10. #2981
+- Dev: Category Lookup Table - Fix Category Segments #2253
+- Performance: add caching layer to analytics. #2970 (Analytics)
+- Dev: Replace lodash isFinite() with native Number.isFinite() #2977 (Build, Components, Packages)
+- Bug: Fix conflict with Blocks 2.4 #2846
+- Dev: Add filter to notes datastore where clauses. #2819
+- Dev: Copy component READMEs to docs folder before GH page deploy. #2952 (Build)
+- Dev: Add GitHub pages deploy step to Travis config. #2940 (Build, Documentation)
+- Dev: Fix plugin installation when working from a push instead of a pull request. #2950 (Build)
+- Dev: Fix pull request branch detection on CI (try #2) #2944 (Build)
+- Dev: Only build pushes to master branch. #2941 (Build)
+- Performance: reduce JS bundle size. #2933 (Build)
+- Dev: Fix pull request branch detection on CI #2942 (Build)
+- Dev: refresh component documentation #2872 (Build, Components, Documentation, Packages)
+- Dev: Simplified intervals_missing method of DataStore class #2920 👏 @codemascot
+- Dev: Simplified intervals_missing method of TimeInterval class #2920 👏 @codemascot
+
+= 0.19.0 2019-09-24 =
+
+- Dev: Use upstream webpack-rtl-plugin #2870 (Build)
+- Dev: Fix variable name typo #2922
+- Fix: persist date_last_active for customer reports #2881 (Analytics) 👏 @cojennin
+- Tweak: consistent naming for report columns. #2845 (Design)
+- Tweak: schedule customer lookup table updates instead of running during checkout. #2832
+- Tweak: have Import note action scroll to import section of settings screen. #2799 (Activity Panel, Components, Inbox, Packages)
+- Bug: Fix chart type buttons misalignment #2871 (Components, Packages)
+- Updated to color-studio v2 and refreshed the color scheme #2837 (Build, Components, Packages)
+- Tweak: change report charts filter name. #2843 (Components, Documentation, Packages)
+- Dev: Update no data message in table #2854 (Components, Packages)
 
 = 0.18.0 2019-08-28 =
 

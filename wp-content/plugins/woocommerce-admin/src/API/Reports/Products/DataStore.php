@@ -12,6 +12,7 @@ defined( 'ABSPATH' ) || exit;
 use \Automattic\WooCommerce\Admin\API\Reports\DataStore as ReportsDataStore;
 use \Automattic\WooCommerce\Admin\API\Reports\DataStoreInterface;
 use \Automattic\WooCommerce\Admin\API\Reports\TimeInterval;
+use \Automattic\WooCommerce\Admin\API\Reports\Cache as ReportsCache;
 
 /**
  * API\Reports\Products\DataStore.
@@ -24,6 +25,13 @@ class DataStore extends ReportsDataStore implements DataStoreInterface {
 	 * @var string
 	 */
 	const TABLE_NAME = 'wc_order_product_lookup';
+
+	/**
+	 * Cache identifier.
+	 *
+	 * @var string
+	 */
+	protected $cache_key = 'products';
 
 	/**
 	 * Mapping columns to data type to return correct response types.
@@ -271,8 +279,12 @@ class DataStore extends ReportsDataStore implements DataStoreInterface {
 		$query_args = wp_parse_args( $query_args, $defaults );
 		$this->normalize_timezones( $query_args, $defaults );
 
+		/*
+		 * We need to get the cache key here because
+		 * parent::update_intervals_sql_params() modifies $query_args.
+		 */
 		$cache_key = $this->get_cache_key( $query_args );
-		$data      = wp_cache_get( $cache_key, $this->cache_group );
+		$data      = $this->get_cached_data( $cache_key );
 
 		if ( false === $data ) {
 			$data = (object) array(
@@ -367,20 +379,10 @@ class DataStore extends ReportsDataStore implements DataStoreInterface {
 				'page_no' => (int) $query_args['page'],
 			);
 
-			wp_cache_set( $cache_key, $data, $this->cache_group );
+			$this->set_cached_data( $cache_key, $data );
 		}
 
 		return $data;
-	}
-
-	/**
-	 * Returns string to be used as cache key for the data.
-	 *
-	 * @param array $params Query parameters.
-	 * @return string
-	 */
-	protected function get_cache_key( $params ) {
-		return 'woocommerce_' . self::TABLE_NAME . '_' . md5( wp_json_encode( $params ) );
 	}
 
 	/**
@@ -400,6 +402,8 @@ class DataStore extends ReportsDataStore implements DataStoreInterface {
 
 		$order_items = $order->get_items();
 		$num_updated = 0;
+		$decimals    = wc_get_price_decimals();
+		$round_tax   = 'no' === get_option( 'woocommerce_tax_round_at_subtotal' );
 
 		foreach ( $order_items as $order_item ) {
 			$order_item_id       = $order_item->get_id();
@@ -423,7 +427,10 @@ class DataStore extends ReportsDataStore implements DataStoreInterface {
 				$tax_amount += isset( $tax_data['total'][ $tax_item_id ] ) ? $tax_data['total'][ $tax_item_id ] : 0;
 			}
 
-			$net_revenue = $order_item->get_subtotal( 'edit' );
+			$net_revenue = round( $order_item->get_total( 'edit' ), $decimals );
+			if ( $round_tax ) {
+				$tax_amount = round( $tax_amount, $decimals );
+			}
 
 			$result = $wpdb->replace(
 				$wpdb->prefix . self::TABLE_NAME,
@@ -499,5 +506,7 @@ class DataStore extends ReportsDataStore implements DataStoreInterface {
 		 * @param int $order_id   Order ID.
 		 */
 		do_action( 'woocommerce_reports_delete_product', 0, $order_id );
+
+		ReportsCache::invalidate();
 	}
 }

@@ -224,9 +224,20 @@ function getUserInfo($request){
 		));
 
          	if(!empty($users)){
-         		$responseUser=get_user_meta($users[0]->ID);
-         		$responsecreds['status']="success";
-         		$responsecreds['data']=$responseUser;
+         		$user=get_user_meta($users[0]->data->ID);
+
+         		$responseUser=array();
+		     		$responseUser['user_nicename']=$user['nickname'][0];
+		     		$responseUser['user_email']=$user['user_email'][0];
+		     		$responseUser['display_name']=$user['display_name'][0];
+		     		$responseUser['first_name']=$user['first_name'][0];
+		     		$responseUser['last_name']=$user['last_name'][0];
+		     		$responseUser['token']=$request["token"];
+		     		
+		     		$responsecreds['status']="success";
+         			$responsecreds['data']=$responseUser;
+
+		     		
          		return $responsecreds;
 
          		
