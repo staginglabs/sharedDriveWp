@@ -1,2 +1,68 @@
 2019-11-06T10:58:44+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\sharedDriveWp\wp-content\themes\Divi\functions.php on line 2
 
+2019-11-06T12:16:02+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\sharedDriveWp\wp-content\plugins\wpglobus\includes\builders\class-wpglobus-builders.php on line 12
+
+2019-11-06T13:35:19+00:00 CRITICAL Uncaught Error: Call to a member function get_results() on null in C:\xampp\htdocs\sharedDriveWp\wp-content\plugins\share-drive\index.php:351
+Stack trace:
+#0 C:\xampp\htdocs\sharedDriveWp\wp-includes\rest-api\class-wp-rest-server.php(946): getUserOrders(Object(WP_REST_Request))
+#1 C:\xampp\htdocs\sharedDriveWp\wp-includes\rest-api\class-wp-rest-server.php(329): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#2 C:\xampp\htdocs\sharedDriveWp\wp-includes\rest-api.php(309): WP_REST_Server->serve_request('/drive/getUserO...')
+#3 C:\xampp\htdocs\sharedDriveWp\wp-includes\class-wp-hook.php(286): rest_api_loaded(Object(WP))
+#4 C:\xampp\htdocs\sharedDriveWp\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#5 C:\xampp\htdocs\sharedDriveWp\wp-includes\plugin.php(531): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\sharedDriveWp\wp-includes\class-wp.php(387): do_action_ref_array('parse_request', Array)
+#7 C:\xampp\htdocs\sharedDriveWp\wp-includes\class-wp.php(737): WP->parse_request('')
+#8 C:\xamp in C:\xampp\htdocs\sharedDriveWp\wp-content\plugins\share-drive\index.php on line 351
+
+2019-11-06T13:43:19+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\sharedDriveWp\wp-content\themes\Divi\functions.php on line 2
+
+2019-11-06T13:47:10+00:00 CRITICAL Uncaught Error: Call to a member function get_results() on null in C:\xampp\htdocs\sharedDriveWp\wp-content\plugins\share-drive\index.php:328
+Stack trace:
+#0 C:\xampp\htdocs\sharedDriveWp\wp-includes\rest-api\class-wp-rest-server.php(946): getUserOrders(Object(WP_REST_Request))
+#1 C:\xampp\htdocs\sharedDriveWp\wp-includes\rest-api\class-wp-rest-server.php(329): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#2 C:\xampp\htdocs\sharedDriveWp\wp-includes\rest-api.php(309): WP_REST_Server->serve_request('/drive/getUserO...')
+#3 C:\xampp\htdocs\sharedDriveWp\wp-includes\class-wp-hook.php(286): rest_api_loaded(Object(WP))
+#4 C:\xampp\htdocs\sharedDriveWp\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#5 C:\xampp\htdocs\sharedDriveWp\wp-includes\plugin.php(531): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\sharedDriveWp\wp-includes\class-wp.php(387): do_action_ref_array('parse_request', Array)
+#7 C:\xampp\htdocs\sharedDriveWp\wp-includes\class-wp.php(737): WP->parse_request('')
+#8 C:\xamp in C:\xampp\htdocs\sharedDriveWp\wp-content\plugins\share-drive\index.php on line 328
+
+2019-11-06T13:47:37+00:00 CRITICAL Uncaught Error: Call to a member function get_results() on null in C:\xampp\htdocs\sharedDriveWp\wp-content\plugins\share-drive\index.php:328
+Stack trace:
+#0 C:\xampp\htdocs\sharedDriveWp\wp-includes\rest-api\class-wp-rest-server.php(946): getUserOrders(Object(WP_REST_Request))
+#1 C:\xampp\htdocs\sharedDriveWp\wp-includes\rest-api\class-wp-rest-server.php(329): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#2 C:\xampp\htdocs\sharedDriveWp\wp-includes\rest-api.php(309): WP_REST_Server->serve_request('/drive/getUserO...')
+#3 C:\xampp\htdocs\sharedDriveWp\wp-includes\class-wp-hook.php(286): rest_api_loaded(Object(WP))
+#4 C:\xampp\htdocs\sharedDriveWp\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#5 C:\xampp\htdocs\sharedDriveWp\wp-includes\plugin.php(531): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\sharedDriveWp\wp-includes\class-wp.php(387): do_action_ref_array('parse_request', Array)
+#7 C:\xampp\htdocs\sharedDriveWp\wp-includes\class-wp.php(737): WP->parse_request('')
+#8 C:\xamp in C:\xampp\htdocs\sharedDriveWp\wp-content\plugins\share-drive\index.php on line 328
+
+2019-11-06T13:49:06+00:00 CRITICAL Uncaught Error: Call to a member function get_results() on null in C:\xampp\htdocs\sharedDriveWp\wp-content\plugins\share-drive\index.php:328
+Stack trace:
+#0 C:\xampp\htdocs\sharedDriveWp\wp-includes\rest-api\class-wp-rest-server.php(946): getUserOrders(Object(WP_REST_Request))
+#1 C:\xampp\htdocs\sharedDriveWp\wp-includes\rest-api\class-wp-rest-server.php(329): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#2 C:\xampp\htdocs\sharedDriveWp\wp-includes\rest-api.php(309): WP_REST_Server->serve_request('/drive/getUserO...')
+#3 C:\xampp\htdocs\sharedDriveWp\wp-includes\class-wp-hook.php(286): rest_api_loaded(Object(WP))
+#4 C:\xampp\htdocs\sharedDriveWp\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#5 C:\xampp\htdocs\sharedDriveWp\wp-includes\plugin.php(531): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\sharedDriveWp\wp-includes\class-wp.php(387): do_action_ref_array('parse_request', Array)
+#7 C:\xampp\htdocs\sharedDriveWp\wp-includes\class-wp.php(737): WP->parse_request('')
+#8 C:\xamp in C:\xampp\htdocs\sharedDriveWp\wp-content\plugins\share-drive\index.php on line 328
+
+2019-11-06T13:50:09+00:00 CRITICAL Uncaught Error: Call to a member function get_results() on null in C:\xampp\htdocs\sharedDriveWp\wp-content\plugins\share-drive\index.php:328
+Stack trace:
+#0 C:\xampp\htdocs\sharedDriveWp\wp-includes\rest-api\class-wp-rest-server.php(946): getUserOrders(Object(WP_REST_Request))
+#1 C:\xampp\htdocs\sharedDriveWp\wp-includes\rest-api\class-wp-rest-server.php(329): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#2 C:\xampp\htdocs\sharedDriveWp\wp-includes\rest-api.php(309): WP_REST_Server->serve_request('/drive/getUserO...')
+#3 C:\xampp\htdocs\sharedDriveWp\wp-includes\class-wp-hook.php(286): rest_api_loaded(Object(WP))
+#4 C:\xampp\htdocs\sharedDriveWp\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#5 C:\xampp\htdocs\sharedDriveWp\wp-includes\plugin.php(531): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\sharedDriveWp\wp-includes\class-wp.php(387): do_action_ref_array('parse_request', Array)
+#7 C:\xampp\htdocs\sharedDriveWp\wp-includes\class-wp.php(737): WP->parse_request('')
+#8 C:\xamp in C:\xampp\htdocs\sharedDriveWp\wp-content\plugins\share-drive\index.php on line 328
+
+2019-11-06T13:52:39+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\sharedDriveWp\wp-content\plugins\easy-login-woocommerce\includes\class-xoo-el-core.php on line 3
+

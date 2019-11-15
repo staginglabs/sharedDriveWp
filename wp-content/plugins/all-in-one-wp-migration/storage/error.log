@@ -1,6 +1,0 @@
-Nov 06 2019 10:38:41
-{"type":2,"message":"fopen(C:\\xampp\\htdocs\\sharedDriveWp\/\/C:\/xampp\/htdocs\/sharedDriveWp\/wp-content\/uploads\/sucuri\/.htaccess): failed to open stream: No such file or directory","file":"C:\\xampp\\htdocs\\sharedDriveWp\\wp-content\\plugins\\sucuri-scanner\\src\\hardening.lib.php","line":98}
-
-Nov 06 2019 10:38:41
-{"type":2,"message":"fopen(C:\\xampp\\htdocs\\sharedDriveWp\/\/C:\/xampp\/htdocs\/sharedDriveWp\/wp-content\/uploads\/sucuri\/.htaccess): failed to open stream: No such file or directory","file":"C:\\xampp\\htdocs\\sharedDriveWp\\wp-content\\plugins\\sucuri-scanner\\src\\hardening.lib.php","line":98}
-

@@ -225,7 +225,6 @@ function getUserInfo($request){
 
          	if(!empty($users)){
          		$user=get_user_meta($users[0]->data->ID);
-
          		$responseUser=array();
 		     		$responseUser['user_nicename']=$user['nickname'][0];
 		     		$responseUser['user_email']=$user['user_email'][0];
@@ -233,7 +232,32 @@ function getUserInfo($request){
 		     		$responseUser['first_name']=$user['first_name'][0];
 		     		$responseUser['last_name']=$user['last_name'][0];
 		     		$responseUser['token']=$request["token"];
-		     		
+                    
+                    $responseUser['billing']['billing_first_name']=$user['billing_first_name'][0];
+                    $responseUser['billing']['billing_last_name']=$user['billing_last_name'][0];
+                    $responseUser['billing']['billing_email']=$user['billing_email'][0];
+                    $responseUser['billing']['billing_phone']=$user['billing_phone'][0];
+                    $responseUser['billing']['billing_country']=$user['billing_country'][0];
+                    $responseUser['billing']['billing_state']=$user['billing_state'][0];
+                    $responseUser['billing']['billing_city']=$user['billing_city'][0];
+                    $responseUser['billing']['billing_address_1']=$user['billing_address_1'][0];
+                    $responseUser['billing']['billing_address_2']=$user['billing_address_2'][0];
+                    $responseUser['billing']['billing_company']=$user['billing_company'][0];
+
+
+                    $responseUser['shipping']['shipping_first_name']=$user['shipping_first_name'][0];
+                    $responseUser['shipping']['shipping_last_name']=$user['shipping_last_name'][0];
+                    $responseUser['shipping']['shipping_company']=$user['shipping_company'][0];
+                    $responseUser['shipping']['shipping_address_1']=$user['shipping_address_1'][0];
+                    $responseUser['shipping']['shipping_address_2']=$user['shipping_address_2'][0];
+                    $responseUser['shipping']['shipping_city']=$user['shipping_city'][0];
+                    $responseUser['shipping']['shipping_postcode']=$user['shipping_postcode'][0];
+                    $responseUser['shipping']['shipping_country']=$user['shipping_country'][0];
+                    $responseUser['shipping']['shipping_state']=$user['shipping_state'][0];
+             
+
+
+
 		     		$responsecreds['status']="success";
          			$responsecreds['data']=$responseUser;
 
@@ -280,8 +304,20 @@ function changePassword($request){
          	if(!empty($users)){
 		          $creds = array();
 		          $new_password=$request["newpassword"];
-		          $conform_password=$request["conform_password"];
-		     	 wp_set_password( $new_password, $users[0]->ID );
+		          $conform_password=$request["ccpassword"];
+
+		          if($new_password===$conform_password){
+			         		wp_set_password( $new_password, $users[0]->ID ); 	
+			         		$responsecreds['status']="error";
+	         				$responsecreds['message']="Password Changed Successfully";
+	         				return $responsecreds;
+		          }else{
+
+		          		$responsecreds['status']="success";
+         				$responsecreds['message']="new Password and conform password didn't match";
+         				return $responsecreds;
+		          }
+		     	 
 
 
 
@@ -321,17 +357,16 @@ function getUserOrders($request){
 					    'meta_value'   => $request["token"],
 					    'meta_compare' => '=',
 		));
+         	global $wpdb;
 
          	if(!empty($users)){
          		$responseUser=get_user_meta($users[0]->ID);
-         		$customer_orders = get_posts( array(
-				    'numberposts' => -1,
-				    'meta_key'    => '_customer_user',
-				    'meta_value'  => $users[0]->ID,
-				    'post_type'   => wc_get_order_types(),
-				    
-				) );
-         		echo "<pre>";print_r($customer_orders);die;
+         		$posts = $wpdb->get_results("SELECT * FROM $wpdb->postmeta WHERE meta_key = '_customer_user' AND  meta_value = " .$users[0]->ID, ARRAY_A);
+	           $order = wc_get_order( 5186 );
+	           
+
+
+         		echo "<pre>";print_r($posts);die;
 
          		$responsecreds['status']="success";
          		$responsecreds['data']=$responseUser;
